@@ -80,7 +80,17 @@ VITE_COMPILER_BASE=https://cdn.jsdelivr.net/npm/@yowasp/clang@22.0.0-git20542-10
 
 ### 2.3 域名
 
-`*.vercel.app` 可以正常收录，但权重低、国内访问不稳。有域名就绑定自定义域名，收录速度和排名都会更好；在 Vercel 里加域名后按提示配置 DNS 即可。换完域名记得跑 `node scripts/set-site-url.mjs`。
+`*.vercel.app` 可以正常收录，但在中国大陆被屏蔽，且权重较低。有域名就绑定自定义域名；在 Vercel 项目里加域名后按提示配置 DNS 即可。换完域名记得跑 `node scripts/set-site-url.mjs`。
+
+如果域名托管在 Cloudflare，给子域名加一条记录：
+
+| 类型 | 名称 | 内容 | 代理状态 |
+| --- | --- | --- | --- |
+| A | `devc` | `76.76.21.21` | **DNS only（灰色云朵）** |
+
+不要开橙色云朵代理。Vercel 需要直接看到 DNS 才能签发证书，代理开启后容易出现 525、重定向循环或域名验证失败。等 Vercel 显示 **Valid Configuration**、HTTPS 正常后，再决定是否开代理。
+
+自定义域名通常能绕过 `vercel.app` 的域名封锁，但 Vercel 没有中国大陆节点，速度和稳定性仍然一般。需要稳定的大陆访问只能换香港/新加坡服务器，或使用国内云主机（需要 ICP 备案）。
 
 ### 2.4 第三方脚本
 
