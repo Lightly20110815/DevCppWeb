@@ -1,0 +1,29 @@
+# Dev-C++ Web
+
+> Dev-C++ 5.11 网页版：在浏览器中编写、编译并运行 C++ 的在线 IDE，基于 React、CodeMirror 与 Clang/WebAssembly，编译器在本地运行。
+
+## 是什么
+
+Dev-C++ Web（https://devcpp-web.vercel.app/）把经典 Windows 的 Dev-C++ 5.11 界面重建为网页应用。用户可以新建 C++ 源文件，按 F11 保存、编译并运行，控制台在网页桌面内单独开窗，支持键盘输入。代码不会上传到服务器。
+
+## 关键词
+
+Dev-C++ 网页版、在线 C++ 编译器、在线编译 C++、浏览器 C++ IDE、C++ 在线运行、WebAssembly、Clang、在线 IDE、C++ 练习环境。
+
+## 功能
+
+- Clang/WebAssembly 工具链，本地编译
+- 语法高亮、自动补全、搜索替换
+- 项目管理、多文件增量编译与结果缓存
+- 浏览器内虚拟文件系统（IndexedDB），刷新后文件保留
+- 还原 Dev-C++ 5.11 的菜单、图标、模板、帮助和快捷键
+
+## 限制
+
+- 首次加载需要下载约 100 MiB 编译器资源
+- 输出的 `.exe` 是 WebAssembly，不能在 Windows 上原生运行
+- 尚不支持 GDB 调试、gprof、原生 GUI/DLL、Windows 资源编译和自定义 Makefile
+
+## 源码
+
+https://github.com/Lightly20110815/DevCppWeb

@@ -1,0 +1,406 @@
+{
+ "templates": [
+  {
+   "file": "1-WinApp.template",
+   "ini": {
+    "Template": {
+     "ver": "1",
+     "Name": "Windows Application",
+     "Icon": "Windows.ico",
+     "Description": "A standard Windows application",
+     "Category": "Basic"
+    },
+    "Unit0": {
+     "CName": "main.c",
+     "CppName": "main.cpp",
+     "C": "winapp_c.txt",
+     "Cpp": "winapp_c.txt"
+    },
+    "Project": {
+     "UnitCount": "1",
+     "Type": "0"
+    }
+   }
+  },
+  {
+   "file": "2-ConsoleApp.template",
+   "ini": {
+    "Template": {
+     "ver": "1",
+     "Name": "Console Application",
+     "Icon": "ConsoleToo.ico",
+     "Description": "A console application (MS-DOS window)",
+     "Category": "Basic"
+    },
+    "Unit0": {
+     "CName": "main.c",
+     "CppName": "main.cpp",
+     "C": "consoleapp_c.txt",
+     "Cpp": "consoleapp_cpp.txt"
+    },
+    "Project": {
+     "UnitCount": "1",
+     "Type": "1"
+    }
+   }
+  },
+  {
+   "file": "3-StaticLib.template",
+   "ini": {
+    "Template": {
+     "ver": "1",
+     "Name": "Static Library",
+     "Icon": "StaticLib.ico",
+     "Description": "A static library (.a)",
+     "Category": "Basic"
+    },
+    "Unit0": {
+     "CName": "",
+     "CppName": ""
+    },
+    "Project": {
+     "UnitCount": "1",
+     "Type": "2"
+    }
+   }
+  },
+  {
+   "file": "4-DLL.template",
+   "ini": {
+    "Template": {
+     "ver": "1",
+     "Name": "DLL",
+     "Icon": "DLL.ico",
+     "Description": "A Dynamic Link Library (DLL)",
+     "Category": "Basic"
+    },
+    "Unit0": {
+     "CName": "dllmain.c",
+     "CppName": "dllmain.cpp",
+     "C": "DLL_c.txt",
+     "Cpp": "Dll_cpp.txt"
+    },
+    "Unit1": {
+     "CName": "dll.h",
+     "CppName": "dll.h",
+     "C": "DLL_h.txt",
+     "Cpp": "Dll_hpp.txt"
+    },
+    "Project": {
+     "UnitCount": "2",
+     "Type": "3",
+     "Compiler": "-DBUILDING_DLL=1",
+     "CppCompiler": "-DBUILDING_DLL=1"
+    }
+   }
+  },
+  {
+   "file": "5-Empty.template",
+   "ini": {
+    "Template": {
+     "ver": "1",
+     "Name": "Empty Project",
+     "Icon": "Empty.ico",
+     "Description": "An empty project",
+     "Catagory": "Basic"
+    },
+    "Unit0": {
+     "CName": "",
+     "CppName": ""
+    },
+    "Project": {
+     "UnitCount": "1",
+     "Type": "1"
+    }
+   }
+  },
+  {
+   "file": "Direct3D.template",
+   "ini": {
+    "Template": {
+     "ver": "1",
+     "Name": "Direct3D",
+     "Icon": "Pizza.ico",
+     "Description": "A basic Direct3D program",
+     "Category": "Multimedia"
+    },
+    "Unit0": {
+     "CName": "main.c",
+     "CppName": "main.cpp",
+     "C": "Direct3D.txt",
+     "Cpp": "Direct3D.txt"
+    },
+    "Project": {
+     "UnitCount": "1",
+     "Type": "0"
+    }
+   }
+  },
+  {
+   "file": "FileEditor.template",
+   "ini": {
+    "Template": {
+     "ver": "1",
+     "Name": "File Editor",
+     "Icon": "Editor.ico",
+     "Description": "A simple Win32 file editor",
+     "Category": "Win32"
+    },
+    "Unit0": {
+     "CName": "main.c",
+     "CppName": "main.cpp",
+     "C": "FileEditor_c.txt",
+     "Cpp": "FileEditor_c.txt"
+    },
+    "Unit1": {
+     "CName": "main.h",
+     "CppName": "main.h",
+     "C": "FileEditor_h.txt",
+     "Cpp": "FileEditor_h.txt"
+    },
+    "Unit2": {
+     "CName": "resource.rc",
+     "CppName": "resource.rc",
+     "C": "FileEditor_rc.txt",
+     "Cpp": "FileEditor_rc.txt"
+    },
+    "Project": {
+     "UnitCount": "3",
+     "Type": "0",
+     "Icon": "Editor.ico"
+    }
+   }
+  },
+  {
+   "file": "Hello.template",
+   "ini": {
+    "Template": {
+     "ver": "1",
+     "Name": "Hello World",
+     "Icon": "Communication.ico",
+     "Description": "A classic Hello World program",
+     "Category": "Console"
+    },
+    "Unit0": {
+     "CName": "main.c",
+     "CppName": "main.cpp",
+     "C": "Hello_c.txt",
+     "Cpp": "Hello_cpp.txt"
+    },
+    "Project": {
+     "UnitCount": "1",
+     "Type": "1",
+     "Icon": "Communication.ico"
+    }
+   }
+  },
+  {
+   "file": "HelloInput.template",
+   "ini": {
+    "Template": {
+     "ver": "1",
+     "Name": "Input Loop",
+     "Icon": "ConsoleToo.ico",
+     "Description": "A console with an input loop",
+     "Category": "Console"
+    },
+    "Unit0": {
+     "CName": "main.c",
+     "CppName": "main.c",
+     "C": "HelloInput_c.txt",
+     "Cpp": "HelloInput_cpp.txt"
+    },
+    "Project": {
+     "UnitCount": "1",
+     "Type": "1"
+    }
+   }
+  },
+  {
+   "file": "Jackpot.template",
+   "ini": {
+    "Template": {
+     "ver": "1",
+     "Name": "Jackpot",
+     "Icon": "Games.ico",
+     "Description": "A number guessing game",
+     "Category": "Console"
+    },
+    "Unit0": {
+     "CName": "main.c",
+     "CppName": "main.cpp",
+     "C": "Jackpot_c.txt",
+     "Cpp": "Jackpot_cpp.txt"
+    },
+    "Project": {
+     "UnitCount": "1",
+     "Type": "1",
+     "Icon": "Games.ico"
+    }
+   }
+  },
+  {
+   "file": "MDIEditor.template",
+   "ini": {
+    "Template": {
+     "ver": "1",
+     "Name": "MDI Editor",
+     "Icon": "Windows.ico",
+     "Description": "A Win32 MDI file editor",
+     "Category": "Win32"
+    },
+    "Unit0": {
+     "CName": "main.c",
+     "CppName": "main.cpp",
+     "C": "MDIEditor_c.txt",
+     "Cpp": "MDIEditor_c.txt"
+    },
+    "Unit1": {
+     "CName": "main.h",
+     "CppName": "main.h",
+     "C": "MDIEditor_h.txt",
+     "Cpp": "MDIEditor_h.txt"
+    },
+    "Unit2": {
+     "CName": "resource.rc",
+     "CppName": "resource.rc",
+     "C": "MDIEditor_rc.txt",
+     "Cpp": "MDIEditor_rc.txt"
+    },
+    "Project": {
+     "UnitCount": "3",
+     "Type": "0"
+    }
+   }
+  },
+  {
+   "file": "OpenGL.template",
+   "ini": {
+    "Template": {
+     "ver": "1",
+     "Name": "OpenGL",
+     "Icon": "Pizza.ico",
+     "Description": "A basic OpenGL program",
+     "Category": "Multimedia"
+    },
+    "Unit0": {
+     "CName": "main.c",
+     "CppName": "main.cpp",
+     "C": "OpenGL.txt",
+     "Cpp": "OpenGL.txt"
+    },
+    "Project": {
+     "UnitCount": "1",
+     "Type": "0",
+     "Linker": "-lopengl32"
+    }
+   }
+  },
+  {
+   "file": "OpenMP.template",
+   "ini": {
+    "Template": {
+     "ver": "1",
+     "Name": "OpenMP",
+     "Icon": "File Management.ico",
+     "Description": "A OpenMP multithreading example",
+     "Category": "Console"
+    },
+    "Unit0": {
+     "CName": "main.c",
+     "CppName": "main.cpp",
+     "C": "OpenMP_c.txt",
+     "Cpp": "OpenMP_cpp.txt"
+    },
+    "Project": {
+     "UnitCount": "1",
+     "Type": "1",
+     "Compiler": "-fopenmp",
+     "CppCompiler": "-fopenmp",
+     "Linker": "-lgomp"
+    }
+   }
+  },
+  {
+   "file": "StdThread.template",
+   "ini": {
+    "Template": {
+     "ver": "1",
+     "Name": "std::thread",
+     "Icon": "Software.ico",
+     "Description": "A C++ multithreading example",
+     "Category": "Console"
+    },
+    "Unit0": {
+     "CName": "main.c",
+     "CppName": "main.cpp",
+     "C": "StdThread_c.txt",
+     "Cpp": "StdThread_cpp.txt"
+    },
+    "Project": {
+     "UnitCount": "1",
+     "Type": "1",
+     "Compiler": "",
+     "CppCompiler": "-std=gnu++11",
+     "Linker": ""
+    }
+   }
+  },
+  {
+   "file": "WinAnim.template",
+   "ini": {
+    "Template": {
+     "ver": "1",
+     "Name": "Animation Example",
+     "Icon": "Windows.ico",
+     "Description": "A Win32 painting example",
+     "Category": "Win32"
+    },
+    "Unit0": {
+     "CName": "main.c",
+     "CppName": "main.cpp",
+     "C": "WinAnim_c.txt",
+     "Cpp": "WinAnim_c.txt"
+    },
+    "Unit1": {
+     "CName": "resource.rc",
+     "CppName": "resource.rc",
+     "C": "WinAnim_rc.txt",
+     "Cpp": "WinAnim_rc.txt"
+    },
+    "Project": {
+     "UnitCount": "2",
+     "Type": "0"
+    }
+   }
+  }
+ ],
+ "files": {
+  "winapp_c.txt": "#include <windows.h>\r\n\r\n/* This is where all the input to the window goes to */\r\nLRESULT CALLBACK WndProc(HWND hwnd, UINT Message, WPARAM wParam, LPARAM lParam) {\r\n\tswitch(Message) {\r\n\t\t\r\n\t\t/* Upon destruction, tell the main thread to stop */\r\n\t\tcase WM_DESTROY: {\r\n\t\t\tPostQuitMessage(0);\r\n\t\t\tbreak;\r\n\t\t}\r\n\t\t\r\n\t\t/* All other messages (a lot of them) are processed using default procedures */\r\n\t\tdefault:\r\n\t\t\treturn DefWindowProc(hwnd, Message, wParam, lParam);\r\n\t}\r\n\treturn 0;\r\n}\r\n\r\n/* The 'main' function of Win32 GUI programs: this is where execution starts */\r\nint WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow) {\r\n\tWNDCLASSEX wc; /* A properties struct of our window */\r\n\tHWND hwnd; /* A 'HANDLE', hence the H, or a pointer to our window */\r\n\tMSG msg; /* A temporary location for all messages */\r\n\r\n\t/* zero out the struct and set the stuff we want to modify */\r\n\tmemset(&wc,0,sizeof(wc));\r\n\twc.cbSize\t\t = sizeof(WNDCLASSEX);\r\n\twc.lpfnWndProc\t = WndProc; /* This is where we will send messages to */\r\n\twc.hInstance\t = hInstance;\r\n\twc.hCursor\t\t = LoadCursor(NULL, IDC_ARROW);\r\n\t\r\n\t/* White, COLOR_WINDOW is just a #define for a system color, try Ctrl+Clicking it */\r\n\twc.hbrBackground = (HBRUSH)(COLOR_WINDOW+1);\r\n\twc.lpszClassName = \"WindowClass\";\r\n\twc.hIcon\t\t = LoadIcon(NULL, IDI_APPLICATION); /* Load a standard icon */\r\n\twc.hIconSm\t\t = LoadIcon(NULL, IDI_APPLICATION); /* use the name \"A\" to use the project icon */\r\n\r\n\tif(!RegisterClassEx(&wc)) {\r\n\t\tMessageBox(NULL, \"Window Registration Failed!\",\"Error!\",MB_ICONEXCLAMATION|MB_OK);\r\n\t\treturn 0;\r\n\t}\r\n\r\n\thwnd = CreateWindowEx(WS_EX_CLIENTEDGE,\"WindowClass\",\"Caption\",WS_VISIBLE|WS_OVERLAPPEDWINDOW,\r\n\t\tCW_USEDEFAULT, /* x */\r\n\t\tCW_USEDEFAULT, /* y */\r\n\t\t640, /* width */\r\n\t\t480, /* height */\r\n\t\tNULL,NULL,hInstance,NULL);\r\n\r\n\tif(hwnd == NULL) {\r\n\t\tMessageBox(NULL, \"Window Creation Failed!\",\"Error!\",MB_ICONEXCLAMATION|MB_OK);\r\n\t\treturn 0;\r\n\t}\r\n\r\n\t/*\r\n\t\tThis is the heart of our program where all input is processed and \r\n\t\tsent to WndProc. Note that GetMessage blocks code flow until it receives something, so\r\n\t\tthis loop will not produce unreasonably high CPU usage\r\n\t*/\r\n\twhile(GetMessage(&msg, NULL, 0, 0) > 0) { /* If no error is received... */\r\n\t\tTranslateMessage(&msg); /* Translate key codes to chars if present */\r\n\t\tDispatchMessage(&msg); /* Send it to WndProc */\r\n\t}\r\n\treturn msg.wParam;\r\n}\r\n",
+  "consoleapp_c.txt": "#include <stdio.h>\r\n#include <stdlib.h>\r\n\r\n/* run this program using the console pauser or add your own getch, system(\"pause\") or input loop */\r\n\r\nint main(int argc, char *argv[]) {\r\n\treturn 0;\r\n}",
+  "consoleapp_cpp.txt": "#include <iostream>\r\n\r\n/* run this program using the console pauser or add your own getch, system(\"pause\") or input loop */\r\n\r\nint main(int argc, char** argv) {\r\n\treturn 0;\r\n}",
+  "dll_c.txt": "/* Replace \"dll.h\" with the name of your header */\r\n#include \"dll.h\"\r\n#include <windows.h>\r\n\r\nDLLIMPORT void HelloWorld()\r\n{\r\n\tMessageBox(0,\"Hello World from DLL!\\n\",\"Hi\",MB_ICONINFORMATION);\r\n}\r\n\r\nBOOL WINAPI DllMain(HINSTANCE hinstDLL,DWORD fdwReason,LPVOID lpvReserved)\r\n{\r\n\tswitch(fdwReason)\r\n\t{\r\n\t\tcase DLL_PROCESS_ATTACH:\r\n\t\t{\r\n\t\t\tbreak;\r\n\t\t}\r\n\t\tcase DLL_PROCESS_DETACH:\r\n\t\t{\r\n\t\t\tbreak;\r\n\t\t}\r\n\t\tcase DLL_THREAD_ATTACH:\r\n\t\t{\r\n\t\t\tbreak;\r\n\t\t}\r\n\t\tcase DLL_THREAD_DETACH:\r\n\t\t{\r\n\t\t\tbreak;\r\n\t\t}\r\n\t}\r\n\t\r\n\t/* Return TRUE on success, FALSE on failure */\r\n\treturn TRUE;\r\n}\r\n",
+  "dll_cpp.txt": "/* Replace \"dll.h\" with the name of your header */\r\n#include \"dll.h\"\r\n#include <windows.h>\r\n\r\nDllClass::DllClass()\r\n{\r\n\r\n}\r\n\r\nDllClass::~DllClass()\r\n{\r\n\r\n}\r\n\r\nvoid DllClass::HelloWorld()\r\n{\r\n\tMessageBox(0, \"Hello World from DLL!\\n\",\"Hi\",MB_ICONINFORMATION);\r\n}\r\n\r\nBOOL WINAPI DllMain(HINSTANCE hinstDLL,DWORD fdwReason,LPVOID lpvReserved)\r\n{\r\n\tswitch(fdwReason)\r\n\t{\r\n\t\tcase DLL_PROCESS_ATTACH:\r\n\t\t{\r\n\t\t\tbreak;\r\n\t\t}\r\n\t\tcase DLL_PROCESS_DETACH:\r\n\t\t{\r\n\t\t\tbreak;\r\n\t\t}\r\n\t\tcase DLL_THREAD_ATTACH:\r\n\t\t{\r\n\t\t\tbreak;\r\n\t\t}\r\n\t\tcase DLL_THREAD_DETACH:\r\n\t\t{\r\n\t\t\tbreak;\r\n\t\t}\r\n\t}\r\n\t\r\n\t/* Return TRUE on success, FALSE on failure */\r\n\treturn TRUE;\r\n}\r\n",
+  "dll_h.txt": "#ifndef _DLL_H_\r\n#define _DLL_H_\r\n\r\n#if BUILDING_DLL\r\n#define DLLIMPORT __declspec(dllexport)\r\n#else\r\n#define DLLIMPORT __declspec(dllimport)\r\n#endif\r\n\r\nDLLIMPORT void HelloWorld();\r\n\r\n#endif\r\n",
+  "dll_hpp.txt": "#ifndef _DLL_H_\r\n#define _DLL_H_\r\n\r\n#if BUILDING_DLL\r\n#define DLLIMPORT __declspec(dllexport)\r\n#else\r\n#define DLLIMPORT __declspec(dllimport)\r\n#endif\r\n\r\nclass DLLIMPORT DllClass\r\n{\r\n\tpublic:\r\n\t\tDllClass();\r\n\t\tvirtual ~DllClass();\r\n\t\tvoid HelloWorld();\r\n};\r\n\r\n#endif\r\n",
+  "direct3d.txt": "// make sure to link to the libraries libd3d9.a and libd3dx9_43.a\r\n// - copy the two files from the lib directory of your compiler\r\n// - open project options >> parameters and add both using \"Add Library or Object\"\r\n\r\n#include <windows.h>\r\n#include <windowsx.h>\r\n#include <d3d9.h>\r\n#include <d3dx9.h>\r\n\r\n// Defines\r\nstruct CUSTOMVERTEX {\r\n\tfloat X;\r\n\tfloat Y;\r\n\tfloat Z;\r\n\tDWORD COLOR;\r\n};\r\n#define CUSTOMFVF (D3DFVF_XYZ | D3DFVF_DIFFUSE)\r\n\r\n// global declarations\r\nLPDIRECT3D9 d3d;\t\t\t\t\t\t\t\t// the pointer to our Direct3D interface\r\nLPDIRECT3DDEVICE9 d3ddev;\t\t\t\t\t\t// the pointer to the device class\r\nLPDIRECT3DVERTEXBUFFER9 vertexbuffer = NULL;\t// the pointer to the vertex buffer\r\n\r\n// this is the function that puts the 3D models into video RAM\r\nvoid init_graphics() {\r\n\t\r\n    // create the vertices using the CUSTOMVERTEX struct\r\n    CUSTOMVERTEX vertices[] =\r\n    {\r\n        { 3.0f, -3.0f, 0.0f, D3DCOLOR_XRGB(0, 0, 255)},\r\n        { 0.0f,  3.0f, 0.0f, D3DCOLOR_XRGB(0, 255, 0)},\r\n        {-3.0f, -3.0f, 0.0f, D3DCOLOR_XRGB(255, 0, 0)},\r\n    };\r\n\r\n    // create a vertex buffer interface called v_buffer\r\n    d3ddev->CreateVertexBuffer(3 * sizeof(CUSTOMVERTEX), 0, CUSTOMFVF, D3DPOOL_MANAGED, &vertexbuffer, NULL);\r\n\r\n    VOID* pVoid;\r\n\r\n    // lock v_buffer and load the vertices into it\r\n    vertexbuffer->Lock(0, 0, (void**)&pVoid, 0);\r\n    memcpy(pVoid, vertices, sizeof(vertices));\r\n    vertexbuffer->Unlock();\r\n}\r\n\r\n// this function initializes and prepares Direct3D for use\r\nvoid initD3D(HWND hwnd) {\r\n    d3d = Direct3DCreate9(D3D_SDK_VERSION);\r\n\r\n    D3DPRESENT_PARAMETERS d3dpp;\r\n\r\n    ZeroMemory(&d3dpp, sizeof(d3dpp));\r\n    \r\n    d3dpp.Windowed \t\t\t\t\t= true;\r\n    d3dpp.SwapEffect \t\t\t\t= D3DSWAPEFFECT_DISCARD;\r\n    d3dpp.hDeviceWindow \t\t\t= hwnd;\r\n    d3dpp.BackBufferFormat\t \t\t= D3DFMT_X8R8G8B8;\r\n    d3dpp.BackBufferWidth \t\t\t= 800;\r\n    d3dpp.BackBufferHeight \t\t\t= 600;\r\n    d3dpp.EnableAutoDepthStencil \t= true;        // Manage SetDepthStencil for us\r\n    d3dpp.AutoDepthStencilFormat \t= D3DFMT_D16;\t// 16-bit pixel format for the z-buffer\r\n\r\n    // create a device class using this information and the info from the d3dpp stuct\r\n    d3d->CreateDevice(D3DADAPTER_DEFAULT, D3DDEVTYPE_HAL, hwnd, D3DCREATE_SOFTWARE_VERTEXPROCESSING, &d3dpp, &d3ddev);\r\n\r\n\t// Create resources\r\n    init_graphics();\r\n\r\n    d3ddev->SetRenderState(D3DRS_LIGHTING, false);    \t\t// turn off the 3D lighting\r\n    d3ddev->SetRenderState(D3DRS_CULLMODE, D3DCULL_NONE);\t// both sides of the triangles\r\n    d3ddev->SetRenderState(D3DRS_ZENABLE,  true);\t\t\t// turn on the z-buffer\r\n}\r\n\r\n// this is the function used to render a single frame\r\nvoid render_frame() {\r\n\t\r\n    d3ddev->Clear(0, NULL, D3DCLEAR_TARGET,  D3DCOLOR_XRGB(0, 0, 0), 1.0f, 0);\r\n    d3ddev->Clear(0, NULL, D3DCLEAR_ZBUFFER, D3DCOLOR_XRGB(0, 0, 0), 1.0f, 0);\r\n\r\n    d3ddev->BeginScene();\r\n\r\n    // select which vertex format we are using\r\n    d3ddev->SetFVF(CUSTOMFVF);\r\n\r\n    // set the view transform\r\n    D3DXMATRIX matView;    // the view transform matrix\r\n    D3DXVECTOR3 camPos(0.0f, 0.0f, 15.0f);\r\n    D3DXVECTOR3 lookAt(0.0f, 0.0f, 0.0f);\r\n    D3DXVECTOR3 up(0.0f, 1.0f, 0.0f);\r\n    \r\n    D3DXMatrixLookAtLH(&matView,\r\n                       &camPos,\t\t// the camera position\r\n                       &lookAt,\t\t// the look-at position\r\n                       &up);\t\t// the up direction\r\n    d3ddev->SetTransform(D3DTS_VIEW, &matView);\r\n\r\n    // set the projection transform\r\n    D3DXMATRIX matProjection;    // the projection transform matrix\r\n    D3DXMatrixPerspectiveFovLH(&matProjection,\r\n                               D3DXToRadian(45),\t\t\t// the vertical field of view\r\n                               800.0f/600.0f,\t\t\t// aspect ratio\r\n                               1.0f,\t\t\t\t\t\t// the near view-plane\r\n                               100.0f);\t\t\t\t\t\t// the far view-plane\r\n    d3ddev->SetTransform(D3DTS_PROJECTION, &matProjection);\r\n\r\n    // select the vertex buffer to display\r\n    d3ddev->SetStreamSource(0, vertexbuffer, 0, sizeof(CUSTOMVERTEX));\r\n\r\n    D3DXMATRIX matTranslateA;    // a matrix to store the translation for triangle A\r\n    D3DXMATRIX matTranslateB;    // a matrix to store the translation for triangle B\r\n    D3DXMATRIX matRotateY;    // a matrix to store the rotation for each triangle\r\n    static float index = 0.0f; index+=0.05f; // an ever-increasing float value\r\n\r\n    // build MULTIPLE matrices to translate the model and one to rotate\r\n    D3DXMatrixTranslation(&matTranslateA, 0.0f, 0.0f, 2.0f);\r\n    D3DXMatrixTranslation(&matTranslateB, 0.0f, 0.0f, -2.0f);\r\n    D3DXMatrixRotationY(&matRotateY, index);    // the front side\r\n\r\n    // tell Direct3D about each world transform, and then draw another triangle\r\n    D3DMATRIX matTemp(matTranslateA * matRotateY);\r\n    d3ddev->SetTransform(D3DTS_WORLD, &matTemp);\r\n    d3ddev->DrawPrimitive(D3DPT_TRIANGLELIST, 0, 1);\r\n\r\n\tmatTemp = matTranslateB * matRotateY;\r\n    d3ddev->SetTransform(D3DTS_WORLD, &matTemp);\r\n    d3ddev->DrawPrimitive(D3DPT_TRIANGLELIST, 0, 1);\r\n\r\n    d3ddev->EndScene();\r\n\r\n    d3ddev->Present(NULL, NULL, NULL, NULL);\r\n}\r\n\r\n// this is the function that cleans up Direct3D and COM\r\nvoid cleanD3D() {\r\n    vertexbuffer->Release();\t// close and release the vertex buffer\r\n    d3ddev->Release();\t\t// close and release the 3D device\r\n    d3d->Release();\t\t\t// close and release Direct3D\r\n}\r\n\r\n// this is the main message handler for the program\r\nLRESULT CALLBACK WindowProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)  {\r\n\tswitch(message) {\r\n\t\tcase WM_DESTROY: {\r\n\t\t\tPostQuitMessage(0);\r\n\t\t\tbreak;\r\n\t\t}\r\n\t\tdefault:\r\n\t\t\treturn DefWindowProc (hWnd, message, wParam, lParam);\r\n    }\r\n}\r\n\r\n// the entry point for any Windows program\r\nint WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow) {\r\n    HWND hwnd;\r\n    WNDCLASSEX wc;\r\n    MSG msg;\r\n\r\n    memset(&wc,0,sizeof(wc));\r\n\twc.cbSize\t\t = sizeof(WNDCLASSEX);\r\n\twc.lpfnWndProc\t = WindowProc;\r\n\twc.hInstance\t = hInstance;\r\n\twc.hCursor\t\t = LoadCursor(NULL, IDC_ARROW);\r\n\twc.hbrBackground = (HBRUSH)(COLOR_WINDOW);\r\n\twc.lpszClassName = \"WindowClass\";\r\n\twc.hIcon\t\t = NULL;\r\n\twc.hIconSm\t\t = NULL;\r\n\r\n    RegisterClassEx(&wc);\r\n\r\n    hwnd = CreateWindowEx(0, \"WindowClass\", \"Direct3D FFP Example\", WS_OVERLAPPEDWINDOW, 0, 0, 800, 600, NULL, NULL, hInstance, NULL);\r\n\r\n    ShowWindow(hwnd, SW_SHOW);\r\n\r\n    // set up and initialize Direct3D\r\n    initD3D(hwnd);\r\n\r\n    // enter the main loop\r\n    while(msg.message != WM_QUIT) {\r\n        while(PeekMessage(&msg, NULL, 0, 0, PM_REMOVE)) {\r\n            TranslateMessage(&msg);\r\n            DispatchMessage(&msg);\r\n        }\r\n        render_frame();\r\n    }\r\n\r\n    // clean up DirectX and COM\r\n    cleanD3D();\r\n\r\n    return msg.wParam;\r\n}\r\n",
+  "fileeditor_c.txt": "#include <windows.h>\r\n#include \"main.h\"\r\n\r\nBOOL LoadFile(HWND hEdit, LPSTR pszFileName) {\r\n\tHANDLE hFile;\r\n\tBOOL bSuccess = FALSE;\r\n\r\n\thFile = CreateFile(pszFileName, GENERIC_READ, FILE_SHARE_READ, NULL, OPEN_EXISTING, 0, 0);\r\n\tif(hFile != INVALID_HANDLE_VALUE) {\r\n\t\tDWORD dwFileSize;\r\n\t\tdwFileSize = GetFileSize(hFile, NULL);\r\n\t\tif(dwFileSize != 0xFFFFFFFF) {\r\n\t\t\tLPSTR pszFileText;\r\n\t\t\tpszFileText = (LPSTR)GlobalAlloc(GPTR, dwFileSize + 1);\r\n\t\t\tif(pszFileText != NULL) {\r\n\t\t\t\tDWORD dwRead;\r\n\t\t\t\tif(ReadFile(hFile, pszFileText, dwFileSize, &dwRead, NULL)) {\r\n\t\t\t\t\tpszFileText[dwFileSize] = 0; // Null terminator\r\n\t\t\t\t\tif(SetWindowText(hEdit, pszFileText))\r\n\t\t\t\t\t\tbSuccess = TRUE; // It worked!\r\n\t\t\t\t}\r\n\t\t\t\tGlobalFree(pszFileText);\r\n\t\t\t}\r\n\t\t}\r\n\t\tCloseHandle(hFile);\r\n\t}\r\n\treturn bSuccess;\r\n}\r\n\r\nBOOL SaveFile(HWND hEdit, LPSTR pszFileName) {\r\n\tHANDLE hFile;\r\n\tBOOL bSuccess = FALSE;\r\n\r\n\thFile = CreateFile(pszFileName, GENERIC_WRITE, 0, 0, CREATE_ALWAYS, FILE_ATTRIBUTE_NORMAL, 0);\r\n\tif(hFile != INVALID_HANDLE_VALUE) {\r\n\t\tDWORD dwTextLength;\r\n\t\tdwTextLength = GetWindowTextLength(hEdit);\r\n\t\tif(dwTextLength > 0) {\r\n\t\t\tLPSTR pszText;\r\n\t\t\tpszText = (LPSTR)GlobalAlloc(GPTR, dwTextLength + 1);\r\n\t\t\tif(pszText != NULL) {\r\n\t\t\t\tif(GetWindowText(hEdit, pszText, dwTextLength + 1)) {\r\n\t\t\t\t\tDWORD dwWritten;\r\n\t\t\t\t\tif(WriteFile(hFile, pszText, dwTextLength, &dwWritten, NULL))\r\n\t\t\t\t\t\tbSuccess = TRUE;\r\n\t\t\t\t}\r\n\t\t\t\tGlobalFree(pszText);\r\n\t\t\t}\r\n\t\t}\r\n\t\tCloseHandle(hFile);\r\n\t}\r\n\treturn bSuccess;\r\n}\r\n\r\nBOOL DoFileOpenSave(HWND hwnd, BOOL bSave) {\r\n\tOPENFILENAME ofn;\r\n\tchar szFileName[MAX_PATH];\r\n\r\n\tZeroMemory(&ofn, sizeof(ofn));\r\n\tszFileName[0] = 0;\r\n\r\n\tofn.lStructSize = sizeof(ofn);\r\n\tofn.hwndOwner = hwnd;\r\n\tofn.lpstrFilter = \"Text Files (*.txt)\\0*.txt\\0All Files (*.*)\\0*.*\\0\\0\";\r\n\tofn.lpstrFile = szFileName;\r\n\tofn.nMaxFile = MAX_PATH;\r\n\tofn.lpstrDefExt = \"txt\";\r\n\r\n\tif(bSave) {\r\n\t\tofn.Flags = OFN_EXPLORER|OFN_PATHMUSTEXIST|OFN_HIDEREADONLY|OFN_OVERWRITEPROMPT;\r\n\t\tif(GetSaveFileName(&ofn)) {\r\n\t\t\tif(!SaveFile(GetDlgItem(hwnd, IDC_MAIN_TEXT), szFileName)) {\r\n\t\t\t\tMessageBox(hwnd, \"Save file failed.\", \"Error\",MB_OK|MB_ICONEXCLAMATION);\r\n\t\t\t\treturn FALSE;\r\n\t\t\t}\r\n\t\t}\r\n\t} else {\r\n\t\tofn.Flags = OFN_EXPLORER|OFN_FILEMUSTEXIST|OFN_HIDEREADONLY;\r\n\t\tif(GetOpenFileName(&ofn)) {\r\n\t\t\tif(!LoadFile(GetDlgItem(hwnd, IDC_MAIN_TEXT), szFileName)) {\r\n\t\t\t\tMessageBox(hwnd, \"Load of file failed.\", \"Error\",MB_OK|MB_ICONEXCLAMATION);\r\n\t\t\t\treturn FALSE;\r\n\t\t\t}\r\n\t\t}\r\n\t}\r\n\treturn TRUE;\r\n}\r\n\r\nLRESULT CALLBACK WndProc(HWND hwnd, UINT Message, WPARAM wParam, LPARAM lParam) {\r\n\tswitch(Message) {\r\n\t\tcase WM_CREATE:\r\n\t\t\tCreateWindow(\"EDIT\", \"\",WS_CHILD|WS_VISIBLE|WS_HSCROLL|WS_VSCROLL|ES_MULTILINE|ES_WANTRETURN,CW_USEDEFAULT, CW_USEDEFAULT, CW_USEDEFAULT, CW_USEDEFAULT,hwnd, (HMENU)IDC_MAIN_TEXT, GetModuleHandle(NULL), NULL);\r\n\t\t\tSendDlgItemMessage(hwnd, IDC_MAIN_TEXT, WM_SETFONT,(WPARAM)GetStockObject(DEFAULT_GUI_FONT), MAKELPARAM(TRUE,0));\r\n\t\t\tbreak;\r\n\t\tcase WM_SIZE:\r\n\t\t\tif(wParam != SIZE_MINIMIZED)\r\n\t\t\t\tMoveWindow(GetDlgItem(hwnd, IDC_MAIN_TEXT), 0, 0, LOWORD(lParam),HIWORD(lParam), TRUE);\r\n\t\t\tbreak;\r\n\t\tcase WM_SETFOCUS:\r\n\t\t\tSetFocus(GetDlgItem(hwnd, IDC_MAIN_TEXT));\r\n\t\t\tbreak;\r\n\t\tcase WM_COMMAND:\r\n\t\t\tswitch(LOWORD(wParam)) {\r\n\t\t\t\tcase CM_FILE_OPEN:\r\n\t\t\t\t\tDoFileOpenSave(hwnd, FALSE);\r\n\t\t\t\t\tbreak;\r\n\t\t\t\tcase CM_FILE_SAVEAS:\r\n\t\t\t\t\tDoFileOpenSave(hwnd, TRUE);\r\n\t\t\t\t\tbreak;\r\n\t\t\t\tcase CM_FILE_EXIT:\r\n\t\t\t\t\tPostMessage(hwnd, WM_CLOSE, 0, 0);\r\n\t\t\t\t\tbreak;\r\n\t\t\t\tcase CM_ABOUT:\r\n\t\t\t\t\tMessageBox (NULL, \"File Editor for Windows!\\nCreated using the Win32 API\" , \"About...\", 0);\r\n\t\t\t\t\tbreak;\r\n\t\t\t}\r\n\t\t\tbreak;\r\n\t\tcase WM_CLOSE:\r\n\t\t\tDestroyWindow(hwnd);\r\n\t\t\tbreak;\r\n\t\tcase WM_DESTROY:\r\n\t\t\tPostQuitMessage(0);\r\n\t\t\tbreak;\r\n\t\tdefault:\r\n\t\t\treturn DefWindowProc(hwnd, Message, wParam, lParam);\r\n\t}\r\n\treturn 0;\r\n}\r\n\r\nint WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,LPSTR lpCmdLine, int nCmdShow) {\r\n\tWNDCLASSEX wc;\r\n\tHWND hwnd;\r\n\tMSG Msg;\r\n\r\n\twc.cbSize        = sizeof(WNDCLASSEX);\r\n\twc.style         = 0;\r\n\twc.lpfnWndProc   = WndProc;\r\n\twc.cbClsExtra    = 0;\r\n\twc.cbWndExtra    = 0;\r\n\twc.hInstance     = hInstance;\r\n\twc.hIcon         = LoadIcon(NULL, IDI_APPLICATION);\r\n\twc.hCursor       = LoadCursor(NULL, IDC_ARROW);\r\n\twc.hbrBackground = (HBRUSH)(COLOR_WINDOW+1);\r\n\twc.lpszMenuName  = \"MAINMENU\";\r\n\twc.lpszClassName = \"WindowClass\";\r\n\twc.hIconSm       = LoadIcon(hInstance,\"A\"); /* A is name used by project icons */\r\n\r\n\tif(!RegisterClassEx(&wc)) {\r\n\t\tMessageBox(0,\"Window Registration Failed!\",\"Error!\",MB_ICONEXCLAMATION|MB_OK|MB_SYSTEMMODAL);\r\n\t\treturn 0;\r\n\t}\r\n\r\n\thwnd = CreateWindowEx(WS_EX_CLIENTEDGE,\"WindowClass\",\"File Editor Example Program\",WS_OVERLAPPEDWINDOW,\r\n\t\tCW_USEDEFAULT,\r\n\t\tCW_USEDEFAULT,\r\n\t\t320,240,\r\n\t\tNULL, NULL, hInstance, NULL);\r\n\r\n\tif(hwnd == NULL) {\r\n\t\tMessageBox(0, \"Window Creation Failed!\", \"Error!\",MB_ICONEXCLAMATION|MB_OK|MB_SYSTEMMODAL);\r\n\t\treturn 0;\r\n\t}\r\n\r\n\tShowWindow(hwnd,1);\r\n\tUpdateWindow(hwnd);\r\n\r\n\twhile(GetMessage(&Msg, NULL, 0, 0) > 0) {\r\n\t\tTranslateMessage(&Msg);\r\n\t\tDispatchMessage(&Msg);\r\n\t}\r\n\treturn Msg.wParam;\r\n}\r\n",
+  "fileeditor_h.txt": "#define CM_FILE_SAVEAS\t9072\r\n#define CM_FILE_EXIT\t9071\r\n#define CM_FILE_OPEN\t9070\r\n#define CM_ABOUT        9069\r\n\r\n#define IDC_MAIN_TEXT 1001\r\n",
+  "fileeditor_rc.txt": "#include \"main.h\"\r\n\r\nMAINMENU MENU \r\n{\r\n POPUP \"&File\"\r\n {\r\n  MENUITEM \"&Open...\", CM_FILE_OPEN\r\n  MENUITEM \"Save &As...\", CM_FILE_SAVEAS\r\n  MENUITEM SEPARATOR\r\n  MENUITEM \"E&xit\", CM_FILE_EXIT\r\n }\r\n\r\n POPUP \"&Help\"\r\n {\r\n  MENUITEM \"&About\", CM_ABOUT\r\n }\r\n}\r\n\r\n",
+  "hello_c.txt": "#include <stdio.h>\r\n\r\nint main(int argc, char** argv) {\r\n\tprintf(\"Hello world!\\n\");\r\n\treturn 0;\r\n}",
+  "hello_cpp.txt": "#include <iostream>\r\n\r\nint main(int argc, char** argv) {\r\n\tstd::cout << \"Hello world!\\n\";\r\n}",
+  "helloinput_c.txt": "#include <stdio.h>\r\n\r\nvoid Foo() {\r\n\tprintf(\"Hello World!\\n\");\r\n}\r\n\r\nint main(int argc, char** argv) {\r\n\tchar input = 0;\r\n\r\n\tprintf(\"Hello! This is a console application.\\n\");\r\n\tprintf(\"Press q to quit, press a to execute foo.\\n\");\r\n\twhile(1) {\r\n\t\tif(scanf(\"%c\",&input) == 1) {\r\n\t\t\tif(input == 'a') {\r\n\t\t\t\tFoo();\r\n\t\t\t} else if(input == 'q') {\r\n\t\t\t\tbreak;\r\n\t\t\t} else if(input != '\\n') {\r\n\t\t\t\tprintf(\"Unknown command '%c'! Ignoring...\\n\",input);\r\n\t\t\t}\r\n\t\t} else {\r\n\t\t\tprintf(\"Invalid input! Ignoring...\\n\");\r\n\t\t}\r\n\t}\r\n\r\n\treturn 0;\r\n}\r\n",
+  "helloinput_cpp.txt": "#include <iostream>\r\nusing std::cin;\r\nusing std::cout;\r\nusing std::endl;\r\n\r\nvoid Foo() {\r\n\tcout << \"Hello World!\" << endl;\r\n}\r\n\r\nint main(int argc, char** argv) {\r\n\tchar input = 0;\r\n\t\r\n\tcout << \"Hello! This is a console application.\" << endl;\r\n\tcout << \"Press q to quit, press a to execute foo.\" << endl;\t\r\n\twhile(1) {\r\n\t\tcin >> input;\r\n\t\tif(input == 'a') {\r\n\t\t\tFoo();\r\n\t\t} else if(input == 'q') {\r\n\t\t\tbreak;\r\n\t\t} else if(input != '\\n') {\r\n\t\t\tcout << \"Unknown command '\" << input << \"'! Ignoring...\\n\";\r\n\t\t}\r\n\t}\r\n\r\n\treturn 0;\r\n}\r\n",
+  "jackpot_cpp.txt": "#include <iostream>\r\n#include <stdlib.h>\r\n#include <time.h>\r\n\r\nusing namespace std;\r\n\r\nvoid Start();\r\nvoid GetResults();\r\n\r\nint i, j, life, maxrand;\r\nchar c;\r\n\r\nvoid Start() {\r\n\ti = 0;\r\n\tj = 0;\r\n\tlife = 0;\r\n\tmaxrand = 6;\r\n\t\r\n\tcout << \"Select difficulty mode:\\n\"; // the user has to select a difficutly level\r\n\tcout << \"1 : Easy (0-15)\\n\";\r\n\tcout << \"2 : Medium (0-30)\\n\";\r\n\tcout << \"3 : Difficult (0-50)\\n\";\r\n\tcout << \"or type another key to quit\\n\";\r\n\tc = 30;\r\n\r\n\tcin >> c;                   // read the user's choice\r\n\tcout << \"\\n\";\r\n\r\n\tswitch (c) {\r\n\t\tcase '1':\r\n\t\t\tmaxrand = 15;  // the random number will be between 0 and maxrand\r\n\t\t\tbreak;\r\n\t\tcase '2':\r\n\t\t\tmaxrand = 30;\r\n\t\t\tbreak;\r\n\t\tcase '3':\r\n\t\t\tmaxrand = 50;\r\n\t\t\tbreak;\r\n\t\tdefault:\r\n\t\t\texit(0);\r\n\t\tbreak;\r\n\t}\r\n\r\n\tlife = 5;         // number of lifes of the player\r\n\tsrand((unsigned)time(NULL)); // init Rand() function\r\n\tj = rand() % maxrand;  // j get a random value between 0 and maxrand\r\n\t\r\n\tGetResults();\r\n}\r\n\r\nvoid GetResults() {\r\n\tif (life <= 0) { // if player has no more life then he loses\r\n\t\tcout << \"You lose !\\n\\n\";\r\n\t\tStart();\r\n\t}\r\n\r\n\tcout << \"Type a number: \\n\";\r\n\tcin >> i;\r\n\t\r\n\tif((i>maxrand) || (i<0)) { // if the user number isn't correct, restart\r\n\t\tcout << \"Error: number not between 0 and \\n\" << maxrand;\r\n\t\tGetResults();\r\n\t}\r\n\r\n\tif(i == j) {\r\n\t\tcout << \"YOU WIN!\\n\\n\"; // the user found the secret number\r\n\t\tStart();\r\n\t} else if(i>j) {\r\n\t\tcout << \"Too BIG\\n\";\r\n\t\tlife = life - 1;\r\n\t\tcout << \"Lives remaining: \" << life << \"\\n\\n\";\r\n\t\tGetResults();\r\n\t} else if(i<j) {\r\n\t\tcout << \"Too SMALL\\n\";\r\n\t\tlife = life - 1;\r\n\t\tcout << \"Lives remaining: \" << life << \"\\n\\n\";\r\n\t\tGetResults();\r\n\t}\r\n}\r\n\r\nint main() {\r\n\tcout << \"** Jackpot game **\\n\";\r\n\tcout << \"The goal of this game is to guess a number.\\n\";\r\n\tcout << \"Jackpot will tell you if the number is too big or too\\n\";\r\n\tcout << \"small compared to the secret number to find.\\n\\n\";\r\n\tStart();\r\n\treturn 0;\r\n}",
+  "mdieditor_c.txt": "#include <windows.h>\r\n#include <commctrl.h>\r\n\r\n#include \"main.h\"\r\n\r\nLRESULT CALLBACK WndProc(HWND hwnd, UINT Message, WPARAM wParam, LPARAM lParam);\r\nLRESULT CALLBACK MDIChildWndProc(HWND hwnd, UINT Message, WPARAM wParam,LPARAM lParam);\r\n\r\nchar g_szAppName[] = \"MyMDIWindow\";\r\nchar g_szChild[] = \"MyMDIChild\";\r\nHINSTANCE g_hInst;\r\nHWND g_hMDIClient, g_hStatusBar, g_hToolBar;\r\nHWND g_hMainWindow;\r\n\r\nBOOL LoadFile(HWND hEdit, LPSTR pszFileName) {\r\n\tHANDLE hFile;\r\n\tBOOL bSuccess = FALSE;\r\n\t\r\n\thFile = CreateFile(pszFileName, GENERIC_READ, FILE_SHARE_READ, NULL,\r\n\tOPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, 0);\r\n\tif(hFile != INVALID_HANDLE_VALUE) {\r\n\t\tDWORD dwFileSize;\r\n\t\tdwFileSize = GetFileSize(hFile, NULL);\r\n\t\tif(dwFileSize != 0xFFFFFFFF) {\r\n\t\t\tLPSTR pszFileText;\r\n\t\t\tpszFileText = LPSTR(GlobalAlloc(GPTR, dwFileSize + 1));\r\n\t\t\tif(pszFileText != NULL) {\r\n\t\t\t\tDWORD dwRead;\r\n\t\t\t\tif(ReadFile(hFile, pszFileText, dwFileSize, &dwRead, NULL)) {\r\n\t\t\t\t\tpszFileText[dwFileSize] = 0; // Null terminator\r\n\t\t\t\t\tif(SetWindowText(hEdit, pszFileText))\r\n\t\t\t\t\t\tbSuccess = TRUE; // It worked!\r\n\t\t\t\t}\r\n\t\t\t\tGlobalFree(pszFileText);\r\n\t\t\t}\r\n\t\t}\r\n\t\tCloseHandle(hFile);\r\n\t}\r\n\treturn bSuccess;\r\n}\r\n\r\nBOOL SaveFile(HWND hEdit, LPSTR pszFileName) {\r\n\tHANDLE hFile;\r\n\tBOOL bSuccess = FALSE;\r\n\t\r\n\thFile = CreateFile(pszFileName, GENERIC_WRITE, 0, NULL,\r\n\tCREATE_ALWAYS, FILE_ATTRIBUTE_NORMAL, 0);\r\n\tif(hFile != INVALID_HANDLE_VALUE) {\r\n\t\tDWORD dwTextLength;\r\n\t\tdwTextLength = GetWindowTextLength(hEdit);\r\n\t\tif(dwTextLength > 0) {// No need to bother if there's no text.\t\r\n\t\t\tLPSTR pszText;\r\n\t\t\tpszText = LPSTR(GlobalAlloc(GPTR, dwTextLength + 1));\r\n\t\t\tif(pszText != NULL) {\r\n\t\t\t\tif(GetWindowText(hEdit, pszText, dwTextLength + 1)) {\r\n\t\t\t\t\tDWORD dwWritten;\r\n\t\t\t\t\tif(WriteFile(hFile, pszText, dwTextLength, &dwWritten, NULL))\r\n\t\t\t\t\t\tbSuccess = TRUE;\r\n\t\t\t\t}\r\n\t\t\t\tGlobalFree(pszText);\r\n\t\t\t}\r\n\t\t}\r\n\t\tCloseHandle(hFile);\r\n\t}\r\n\treturn bSuccess;\r\n}\r\n\r\nBOOL GetFileName(HWND hwnd, LPSTR pszFileName, BOOL bSave) {\r\n\tOPENFILENAME ofn;\r\n\t\r\n\tZeroMemory(&ofn, sizeof(ofn));\r\n\tpszFileName[0] = 0;\r\n\t\r\n\tofn.lStructSize = sizeof(ofn);\r\n\tofn.hwndOwner = hwnd;\r\n\tofn.lpstrFilter = \"Text Files (*.txt)\\0*.txt\\0All Files (*.*)\\0*.*\\0\\0\";\r\n\tofn.lpstrFile = pszFileName;\r\n\tofn.nMaxFile = MAX_PATH;\r\n\tofn.lpstrDefExt = \"txt\";\r\n\t\r\n\tif(bSave) {\r\n\t\tofn.Flags = OFN_EXPLORER | OFN_PATHMUSTEXIST | OFN_HIDEREADONLY |\r\n\t\tOFN_OVERWRITEPROMPT;\r\n\t\tif(!GetSaveFileName(&ofn))\r\n\t\t\treturn FALSE;\r\n\t} else {\r\n\t\tofn.Flags = OFN_EXPLORER | OFN_FILEMUSTEXIST | OFN_HIDEREADONLY;\r\n\t\tif(!GetOpenFileName(&ofn))\r\n\t\t\treturn FALSE;\r\n\t}\r\n\treturn TRUE;\r\n}\r\n\r\nint WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,LPSTR lpszCmdParam, int nCmdShow) {\r\n\tMSG  Msg;\r\n\tWNDCLASSEX WndClassEx;\r\n\t\r\n\tg_hInst = hInstance;\r\n\t\r\n\tWndClassEx.cbSize          = sizeof(WNDCLASSEX);\r\n\tWndClassEx.style           = CS_HREDRAW | CS_VREDRAW;\r\n\tWndClassEx.lpfnWndProc     = WndProc;\r\n\tWndClassEx.cbClsExtra      = 0;\r\n\tWndClassEx.cbWndExtra      = 0;\r\n\tWndClassEx.hInstance       = hInstance;\r\n\tWndClassEx.hIcon           = LoadIcon(NULL, IDI_APPLICATION);\r\n\tWndClassEx.hCursor         = LoadCursor(NULL, IDC_ARROW);\r\n\tWndClassEx.hbrBackground   = (HBRUSH)(COLOR_3DSHADOW+1);\r\n\tWndClassEx.lpszMenuName    = \"MAIN\";\r\n\tWndClassEx.lpszClassName   = g_szAppName;\r\n\tWndClassEx.hIconSm         = LoadIcon(NULL, IDI_APPLICATION);\r\n\r\n\tif(!RegisterClassEx(&WndClassEx)) {\r\n\t\tMessageBox(0, \"Could Not Register Window\", \"Oh Oh...\",MB_ICONEXCLAMATION | MB_OK);\r\n\t\treturn -1;\r\n\t}\r\n\r\n\tWndClassEx.lpfnWndProc     = MDIChildWndProc;\r\n\tWndClassEx.lpszMenuName    = NULL;\r\n\tWndClassEx.lpszClassName   = g_szChild;\r\n\tWndClassEx.hbrBackground   = (HBRUSH)(COLOR_3DFACE+1);\r\n\r\n\tif(!RegisterClassEx(&WndClassEx)) {\r\n\t\tMessageBox(0, \"Could Not Register Child Window\", \"Oh Oh...\",\r\n\t\tMB_ICONEXCLAMATION | MB_OK);\r\n\t\treturn -1;\r\n\t}\r\n\r\n\tg_hMainWindow = CreateWindowEx(WS_EX_APPWINDOW,g_szAppName,\"MDI File Editor\",WS_OVERLAPPEDWINDOW | WS_CLIPCHILDREN,\r\n\t\tCW_USEDEFAULT,\r\n\t\tCW_USEDEFAULT,\r\n\t\tCW_USEDEFAULT,\r\n\t\tCW_USEDEFAULT,\r\n\t\t0, 0, hInstance, NULL);\r\n\r\n\tif (g_hMainWindow == NULL){\r\n\t\tMessageBox(0, \"No Window\", \"Oh Oh...\", MB_ICONEXCLAMATION | MB_OK);\r\n\t\treturn -1;\r\n\t}\r\n\r\n\tShowWindow(g_hMainWindow, nCmdShow);\r\n\tUpdateWindow(g_hMainWindow);\r\n\r\n\twhile(GetMessage(&Msg, NULL, 0, 0)) {\r\n\t\tif (!TranslateMDISysAccel(g_hMDIClient, &Msg)) {\r\n\t\t\tTranslateMessage(&Msg);\r\n\t\t\tDispatchMessage(&Msg);\r\n\t\t}\r\n\t}\r\n\treturn Msg.wParam;\r\n}\r\n\r\nLRESULT CALLBACK WndProc(HWND hwnd, UINT Message, WPARAM wParam, LPARAM lParam) {\r\n\tswitch(Message) {\r\n\t\tcase WM_CREATE: {\r\n\t\t\tCLIENTCREATESTRUCT ccs;\r\n\t\t\tint iStatusWidths[] = {200, 300, -1};\r\n\t\t\tTBADDBITMAP tbab;\r\n\t\t\tTBBUTTON tbb[9];\r\n\r\n\t\t\t// Find window menu where children will be listed\r\n\t\t\tccs.hWindowMenu  = GetSubMenu(GetMenu(hwnd), 2);\r\n\t\t\tccs.idFirstChild = ID_MDI_FIRSTCHILD;\r\n\t\t\tg_hMDIClient = CreateWindowEx(WS_EX_CLIENTEDGE, \"mdiclient\", NULL,\r\n\t\t\tWS_CHILD | WS_CLIPCHILDREN | WS_VSCROLL | WS_HSCROLL,\r\n\t\t\tCW_USEDEFAULT, CW_USEDEFAULT, CW_USEDEFAULT, CW_USEDEFAULT,\r\n\t\t\thwnd, (HMENU)ID_MDI_CLIENT, g_hInst, (LPVOID)&ccs);\r\n\t\t\tShowWindow(g_hMDIClient, SW_SHOW);\r\n\t\t\t\r\n\t\t\tg_hStatusBar = CreateWindowEx(0, STATUSCLASSNAME, NULL,\r\n\t\t\tWS_CHILD | WS_VISIBLE | SBARS_SIZEGRIP, 0, 0, 0, 0,\r\n\t\t\thwnd, (HMENU)ID_STATUSBAR, g_hInst, NULL);\r\n\t\t\tSendMessage(g_hStatusBar, SB_SETPARTS, 3, (LPARAM)iStatusWidths);\r\n\t\t\tSendMessage(g_hStatusBar, SB_SETTEXT, 2, (LPARAM)\"Toolbar & Statusbar Example\");\r\n\t\t\t\r\n\t\t\tg_hToolBar = CreateWindowEx(0, TOOLBARCLASSNAME, NULL,\r\n\t\t\tWS_CHILD | WS_VISIBLE, 0, 0, 0, 0,\r\n\t\t\thwnd, (HMENU)ID_TOOLBAR, g_hInst, NULL);\r\n\t\t\t\r\n\t\t\t// Send the TB_BUTTONSTRUCTSIZE message, which is required for\r\n\t\t\t// backward compatibility.\r\n\t\t\tSendMessage(g_hToolBar, TB_BUTTONSTRUCTSIZE, (WPARAM)sizeof(TBBUTTON), 0);\r\n\t\t\t\r\n\t\t\ttbab.hInst = HINST_COMMCTRL;\r\n\t\t\ttbab.nID = IDB_STD_SMALL_COLOR;\r\n\t\t\tSendMessage(g_hToolBar, TB_ADDBITMAP, 0, (LPARAM)&tbab);\r\n\t\t\t\r\n\t\t\tZeroMemory(tbb, sizeof(tbb));\r\n\t\t\t\r\n\t\t\ttbb[0].iBitmap = STD_FILENEW;\r\n\t\t\ttbb[0].fsState = TBSTATE_ENABLED;\r\n\t\t\ttbb[0].fsStyle = TBSTYLE_BUTTON;\r\n\t\t\ttbb[0].idCommand = CM_FILE_NEW;\r\n\t\t\t\r\n\t\t\ttbb[1].iBitmap = STD_FILEOPEN;\r\n\t\t\ttbb[1].fsState = TBSTATE_ENABLED;\r\n\t\t\ttbb[1].fsStyle = TBSTYLE_BUTTON;\r\n\t\t\ttbb[1].idCommand = CM_FILE_OPEN;\r\n\t\t\t\r\n\t\t\ttbb[2].iBitmap = STD_FILESAVE;\r\n\t\t\ttbb[2].fsStyle = TBSTYLE_BUTTON;\r\n\t\t\ttbb[2].idCommand = CM_FILE_SAVE;\r\n\t\t\t\r\n\t\t\ttbb[3].fsStyle = TBSTYLE_SEP;\r\n\t\t\t\r\n\t\t\ttbb[4].iBitmap = STD_CUT;\r\n\t\t\ttbb[4].fsStyle = TBSTYLE_BUTTON;\r\n\t\t\ttbb[4].idCommand = CM_EDIT_CUT;\r\n\t\t\t\r\n\t\t\ttbb[5].iBitmap = STD_COPY;\r\n\t\t\ttbb[5].fsStyle = TBSTYLE_BUTTON;\r\n\t\t\ttbb[5].idCommand = CM_EDIT_COPY;\r\n\t\t\t\r\n\t\t\ttbb[6].iBitmap = STD_PASTE;\r\n\t\t\ttbb[6].fsStyle = TBSTYLE_BUTTON;\r\n\t\t\ttbb[6].idCommand = CM_EDIT_PASTE;\r\n\t\t\t\r\n\t\t\ttbb[7].fsStyle = TBSTYLE_SEP;\r\n\t\t\t\r\n\t\t\ttbb[8].iBitmap = STD_UNDO;\r\n\t\t\ttbb[8].fsStyle = TBSTYLE_BUTTON;\r\n\t\t\ttbb[8].idCommand = CM_EDIT_UNDO;\r\n\t\t\t\r\n\t\t\tSendMessage(g_hToolBar, TB_ADDBUTTONS, 9, (LPARAM)&tbb);\r\n\t\t\treturn 0;\r\n\t\t}\r\n\t\tcase WM_COMMAND: {\r\n\t\t\tswitch(LOWORD(wParam)) {\r\n\t\t\t\tcase CM_FILE_EXIT:\r\n\t\t\t\t\tPostMessage(hwnd, WM_CLOSE, 0, 0);\r\n\t\t\t\t\tbreak;\r\n\t\t\t\tcase CM_FILE_NEW: {\r\n\t\t\t\t\tMDICREATESTRUCT mcs;\r\n\t\t\t\t\tHWND hChild;\r\n\t\t\t\t\t\r\n\t\t\t\t\tmcs.szTitle = \"[Untitled]\";\r\n\t\t\t\t\tmcs.szClass = g_szChild;\r\n\t\t\t\t\tmcs.hOwner  = g_hInst;\r\n\t\t\t\t\tmcs.x = mcs.cx = CW_USEDEFAULT;\r\n\t\t\t\t\tmcs.y = mcs.cy = CW_USEDEFAULT;\r\n\t\t\t\t\tmcs.style = MDIS_ALLCHILDSTYLES;\r\n\t\t\t\t\t\r\n\t\t\t\t\thChild = (HWND)SendMessage(g_hMDIClient, WM_MDICREATE,0, (LPARAM)&mcs);\r\n\t\t\t\t\tif(!hChild) {\r\n\t\t\t\t\t\tMessageBox(hwnd, \"MDI Child creation failed.\", \"Oh Oh...\",MB_ICONEXCLAMATION | MB_OK);\r\n\t\t\t\t\t}\r\n\t\t\t\t\tbreak;\r\n\t\t\t\t}\r\n\t\t\t\tcase CM_FILE_OPEN: {\r\n\t\t\t\t\tMDICREATESTRUCT mcs;\r\n\t\t\t\t\tHWND hChild;\r\n\t\t\t\t\tchar szFileName[MAX_PATH];\r\n\t\t\t\t\t\r\n\t\t\t\t\tif(!GetFileName(hwnd, szFileName, FALSE))\r\n\t\t\t\t\t\tbreak;\r\n\r\n\t\t\t\t\tmcs.szTitle = szFileName;\r\n\t\t\t\t\tmcs.szClass = g_szChild;\r\n\t\t\t\t\tmcs.hOwner  = g_hInst;\r\n\t\t\t\t\tmcs.x = mcs.cx = CW_USEDEFAULT;\r\n\t\t\t\t\tmcs.y = mcs.cy = CW_USEDEFAULT;\r\n\t\t\t\t\tmcs.style = MDIS_ALLCHILDSTYLES;\r\n\r\n\t\t\t\t\thChild = (HWND)SendMessage(g_hMDIClient, WM_MDICREATE, 0, (LPARAM)&mcs);\r\n\r\n\t\t\t\t\tif(!hChild) {\r\n\t\t\t\t\t\tMessageBox(hwnd, \"MDI Child creation failed.\", \"Oh Oh...\",\r\n\t\t\t\t\t\tMB_ICONEXCLAMATION | MB_OK);\r\n\t\t\t\t\t}\r\n\t\t\t\t\tbreak;\r\n\t\t\t\t}\r\n\t\t\t\tcase CM_WINDOW_TILEHORZ:\r\n\t\t\t\t\tPostMessage(g_hMDIClient, WM_MDITILE, MDITILE_HORIZONTAL, 0);\r\n\t\t\t\t\tbreak;\r\n\t\t\t\tcase CM_WINDOW_TILEVERT:\r\n\t\t\t\t\tPostMessage(g_hMDIClient, WM_MDITILE, MDITILE_VERTICAL, 0);\r\n\t\t\t\t\tbreak;\r\n\t\t\t\tcase CM_WINDOW_CASCADE:\r\n\t\t\t\t\tPostMessage(g_hMDIClient, WM_MDICASCADE, 0, 0);\r\n\t\t\t\t\tbreak;\r\n\t\t\t\tcase CM_WINDOW_ARRANGE:\r\n\t\t\t\t\tPostMessage(g_hMDIClient, WM_MDIICONARRANGE, 0, 0);\r\n\t\t\t\t\tbreak;\r\n\t\t\t\tdefault: {\r\n\t\t\t\t\tif(LOWORD(wParam) >= ID_MDI_FIRSTCHILD){\r\n\t\t\t\t\t\tDefFrameProc(hwnd, g_hMDIClient, Message, wParam, lParam);\r\n\t\t\t\t\t} else {\r\n\t\t\t\t\t\tHWND hChild;\r\n\t\t\t\t\t\thChild = (HWND)SendMessage(g_hMDIClient, WM_MDIGETACTIVE,0,0);\r\n\t\t\t\t\t\tif(hChild){\r\n\t\t\t\t\t\t\tSendMessage(hChild, WM_COMMAND, wParam, lParam);\r\n\t\t\t\t\t\t}\r\n\t\t\t\t\t}\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t\tbreak;\r\n\t\t}\r\n\t\tcase WM_SIZE: {\r\n\t\t\tRECT rectClient, rectStatus, rectTool;\r\n\t\t\tUINT uToolHeight, uStatusHeight, uClientAlreaHeight;\r\n\t\t\t\r\n\t\t\tSendMessage(g_hToolBar, TB_AUTOSIZE, 0, 0);\r\n\t\t\tSendMessage(g_hStatusBar, WM_SIZE, 0, 0);\r\n\t\t\t\r\n\t\t\tGetClientRect(hwnd, &rectClient);\r\n\t\t\tGetWindowRect(g_hStatusBar, &rectStatus);\r\n\t\t\tGetWindowRect(g_hToolBar, &rectTool);\r\n\t\t\t\r\n\t\t\tuToolHeight = rectTool.bottom - rectTool.top;\r\n\t\t\tuStatusHeight = rectStatus.bottom - rectStatus.top;\r\n\t\t\tuClientAlreaHeight = rectClient.bottom;\r\n\t\t\t\r\n\t\t\tMoveWindow(g_hMDIClient, 0, uToolHeight, rectClient.right, uClientAlreaHeight - uStatusHeight - uToolHeight, TRUE);\r\n\t\t\tbreak;\r\n\t\t}\r\n\t\tcase WM_CLOSE:\r\n\t\t\tDestroyWindow(hwnd);\r\n\t\t\tbreak;\r\n\t\tcase WM_DESTROY:\r\n\t\t\tPostQuitMessage(0);\r\n\t\t\tbreak;\r\n\t\tdefault:\r\n\t\t\treturn DefFrameProc(hwnd, g_hMDIClient, Message, wParam, lParam);\r\n\t}\r\n\treturn 0;\r\n}\r\n\r\nLRESULT CALLBACK MDIChildWndProc(HWND hwnd, UINT Message, WPARAM wParam,LPARAM lParam) {\r\n\tswitch(Message) {\r\n\t\tcase WM_CREATE: {\r\n\t\t\tchar szFileName[MAX_PATH];\r\n\t\t\tHWND hEdit;\r\n\t\t\t\r\n\t\t\thEdit = CreateWindowEx(WS_EX_CLIENTEDGE, \"EDIT\", \"\", WS_CHILD | WS_VISIBLE | WS_HSCROLL | WS_VSCROLL | ES_MULTILINE | ES_WANTRETURN,\r\n\t\t\t\tCW_USEDEFAULT, CW_USEDEFAULT, CW_USEDEFAULT, CW_USEDEFAULT,\r\n\t\t\thwnd, (HMENU)IDC_CHILD_EDIT, g_hInst, NULL);\r\n\t\t\t\r\n\t\t\tSendMessage(hEdit, WM_SETFONT,\r\n\t\t\t(WPARAM)GetStockObject(DEFAULT_GUI_FONT), MAKELPARAM(TRUE, 0));\r\n\t\t\t\r\n\t\t\tGetWindowText(hwnd, szFileName, MAX_PATH);\r\n\t\t\tif(*szFileName != '[') {\r\n\t\t\t\tif(!LoadFile(hEdit, szFileName)) {\r\n\t\t\t\t\tMessageBox(hwnd, \"Couldn't Load File.\", \"Error.\",MB_OK | MB_ICONEXCLAMATION);\r\n\t\t\t\t\treturn -1; //cancel window creation\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t\tbreak;\r\n\t\t}\r\n\t\tcase WM_SIZE:\r\n\t\t\tif(wParam != SIZE_MINIMIZED)\r\n\t\t\t\tMoveWindow(GetDlgItem(hwnd, IDC_CHILD_EDIT), 0, 0, LOWORD(lParam),HIWORD(lParam), TRUE);\r\n\t\t\tbreak;\r\n\t\tcase WM_MDIACTIVATE: {\r\n\t\t\tHMENU hMenu, hFileMenu;\r\n\t\t\tBOOL EnableFlag;\r\n\t\t\tchar szFileName[MAX_PATH];\r\n\t\t\t\r\n\t\t\thMenu = GetMenu(g_hMainWindow);\r\n\t\t\tif(hwnd == (HWND)lParam){      //being activated\r\n\t\t\t\tEnableFlag = TRUE;\r\n\t\t\t} else{\r\n\t\t\t\tEnableFlag = FALSE;    //being de-activated\r\n\t\t\t}\r\n\t\t\tEnableMenuItem(hMenu, 1, MF_BYPOSITION | (EnableFlag ? MF_ENABLED : MF_GRAYED));\r\n\t\t\tEnableMenuItem(hMenu, 2, MF_BYPOSITION | (EnableFlag ? MF_ENABLED : MF_GRAYED));\r\n\t\t\t\r\n\t\t\thFileMenu = GetSubMenu(hMenu, 0);\r\n\t\t\tEnableMenuItem(hFileMenu, CM_FILE_SAVE, MF_BYCOMMAND | (EnableFlag ? MF_ENABLED : MF_GRAYED));\r\n\t\t\tEnableMenuItem(hFileMenu, CM_FILE_SAVEAS, MF_BYCOMMAND | (EnableFlag ? MF_ENABLED : MF_GRAYED));\r\n\t\t\t\r\n\t\t\tDrawMenuBar(g_hMainWindow);\r\n\t\t\t\r\n\t\t\tSendMessage(g_hToolBar, TB_ENABLEBUTTON, CM_FILE_SAVE, MAKELONG(EnableFlag, 0));\r\n\t\t\tSendMessage(g_hToolBar, TB_ENABLEBUTTON, CM_EDIT_UNDO, MAKELONG(EnableFlag, 0));\r\n\t\t\tSendMessage(g_hToolBar, TB_ENABLEBUTTON, CM_EDIT_CUT, MAKELONG(EnableFlag, 0));\r\n\t\t\tSendMessage(g_hToolBar, TB_ENABLEBUTTON, CM_EDIT_COPY, MAKELONG(EnableFlag, 0));\r\n\t\t\tSendMessage(g_hToolBar, TB_ENABLEBUTTON, CM_EDIT_PASTE, MAKELONG(EnableFlag, 0));\r\n\t\t\t\r\n\t\t\tGetWindowText(hwnd, szFileName, MAX_PATH);\r\n\t\t\tSendMessage(g_hStatusBar, SB_SETTEXT, 0, (LPARAM)(EnableFlag ? szFileName : \"\"));\r\n\t\t\tbreak;\r\n\t\t}\r\n\t\tcase WM_SETFOCUS:\r\n\t\t\tSetFocus(GetDlgItem(hwnd, IDC_CHILD_EDIT));\r\n\t\t\tbreak;\r\n\t\tcase WM_COMMAND: {\r\n\t\t\tswitch(LOWORD(wParam)) {\r\n\t\t\t\tcase CM_FILE_SAVE: {\r\n\t\t\t\t\tchar szFileName[MAX_PATH];\r\n\t\t\t\t\t\r\n\t\t\t\t\tGetWindowText(hwnd, szFileName, MAX_PATH);\r\n\t\t\t\t\tif(*szFileName != '[') {\r\n\t\t\t\t\t\tif(!SaveFile(GetDlgItem(hwnd, IDC_CHILD_EDIT), szFileName)) {\r\n\t\t\t\t\t\t\tMessageBox(hwnd, \"Couldn't Save File.\", \"Error.\",MB_OK | MB_ICONEXCLAMATION);\r\n\t\t\t\t\t\t\treturn 0;\r\n\t\t\t\t\t\t}\r\n\t\t\t\t\t} else {\r\n\t\t\t\t\t\tPostMessage(hwnd, WM_COMMAND,MAKEWPARAM(CM_FILE_SAVEAS, 0), 0);\r\n\t\t\t\t\t}\r\n\t\t\t\t\treturn 0;\r\n\t\t\t\t}\r\n\t\t\t\tcase CM_FILE_SAVEAS: {\r\n\t\t\t\t\tchar szFileName[MAX_PATH];\r\n\r\n\t\t\t\t\tif(GetFileName(hwnd, szFileName, TRUE)) {\r\n\t\t\t\t\t\tif(!SaveFile(GetDlgItem(hwnd, IDC_CHILD_EDIT), szFileName)) {\r\n\t\t\t\t\t\t\tMessageBox(hwnd, \"Couldn't Save File.\", \"Error.\",MB_OK | MB_ICONEXCLAMATION);\r\n\t\t\t\t\t\t\treturn 0;\r\n\t\t\t\t\t\t} else {\r\n\t\t\t\t\t\t\tSetWindowText(hwnd, szFileName);\r\n\t\t\t\t\t\t}\r\n\t\t\t\t\t}\r\n\t\t\t\t\treturn 0;\r\n\t\t\t\t}\r\n\t\t\t\tcase CM_EDIT_UNDO:\r\n\t\t\t\t\tSendDlgItemMessage(hwnd, IDC_CHILD_EDIT, EM_UNDO, 0, 0);\r\n\t\t\t\t\tbreak;\r\n\t\t\t\tcase CM_EDIT_CUT:\r\n\t\t\t\t\tSendDlgItemMessage(hwnd, IDC_CHILD_EDIT, WM_CUT, 0, 0);\r\n\t\t\t\t\tbreak;\r\n\t\t\t\tcase CM_EDIT_COPY:\r\n\t\t\t\t\tSendDlgItemMessage(hwnd, IDC_CHILD_EDIT, WM_COPY, 0, 0);\r\n\t\t\t\t\tbreak;\r\n\t\t\t\tcase CM_EDIT_PASTE:\r\n\t\t\t\t\tSendDlgItemMessage(hwnd, IDC_CHILD_EDIT, WM_PASTE, 0, 0);\r\n\t\t\t\t\tbreak;\r\n\t\t\t}\r\n\t\t\treturn 0;\r\n\t\t}\r\n\t}\r\n\treturn DefMDIChildProc(hwnd, Message, wParam, lParam);\r\n}\r\n",
+  "mdieditor_h.txt": "#define CM_WINDOW_TILEVERT\t9080\r\n#define CM_WINDOW_TILEHORZ\t9082\r\n#define CM_WINDOW_ARRANGE\t9081\r\n#define CM_WINDOW_TILE\t9080\r\n#define CM_WINDOW_CASCADE\t9076\r\n#define CM_EDIT_PASTE\t9079\r\n#define CM_EDIT_COPY\t9078\r\n#define CM_EDIT_CUT\t9077\r\n#define CM_EDIT_REDO\t9076\r\n#define CM_EDIT_UNDO\t9075\r\n#define CM_FILE_SAVEAS\t9074\r\n#define CM_FILE_SAVE\t9073\r\n#define CM_FILE_OPEN\t9072\r\n#define CM_HELP_ABOUT\t9072\r\n#define CM_FILE_EXIT\t9071\r\n#define CM_FILE_NEW\t9070\r\n\r\n#define ID_STATUSBAR       4997\r\n#define ID_TOOLBAR         4998\r\n\r\n#define ID_MDI_CLIENT      4999\r\n#define ID_MDI_FIRSTCHILD  50000\r\n\r\n#define IDC_CHILD_EDIT      2000\r\n",
+  "mdieditor_rc.txt": "#include \"main.h\"\r\n\r\nMAIN MENU \r\n{\r\n\tPOPUP \"&File\"\r\n\t{\r\n\t\tMENUITEM \"&New\", CM_FILE_NEW\r\n\t\tMENUITEM \"&Open...\", CM_FILE_OPEN\r\n\t\tMENUITEM \"&Save\", CM_FILE_SAVE, GRAYED\r\n\t\tMENUITEM \"Save &As...\", CM_FILE_SAVEAS, GRAYED\r\n\t\tMENUITEM SEPARATOR\r\n\t\tMENUITEM \"E&xit\", CM_FILE_EXIT\r\n\t}\r\n\t\r\n\tPOPUP \"&Edit\", GRAYED\r\n\t{\r\n\t\tMENUITEM \"&Undo\\tCtrl+Z\", CM_EDIT_UNDO\r\n\t\tMENUITEM SEPARATOR\r\n\t\tMENUITEM \"Cu&t\\tCtrl+X\", CM_EDIT_CUT\r\n\t\tMENUITEM \"&Copy\\tCtrl+C\", CM_EDIT_COPY\r\n\t\tMENUITEM \"&Paste\\tCtrl+V\", CM_EDIT_PASTE\r\n\t}\r\n\t\r\n\tPOPUP \"&Window\", GRAYED\r\n\t{\r\n\t\tMENUITEM \"&Cascade\", CM_WINDOW_CASCADE\r\n\t\tMENUITEM \"Tile &Horizontal\", CM_WINDOW_TILEHORZ\r\n\t\tMENUITEM \"Tile &Vertical\", CM_WINDOW_TILEVERT\r\n\t\tMENUITEM \"Arrange &Icons\", CM_WINDOW_ARRANGE\r\n\t}\r\n}\r\n",
+  "opengl.txt": "/**************************\r\n * Includes\r\n *\r\n **************************/\r\n\r\n#include <windows.h>\r\n#include <gl/gl.h>\r\n\r\n\r\n/**************************\r\n * Function Declarations\r\n *\r\n **************************/\r\n\r\nLRESULT CALLBACK WndProc (HWND hWnd, UINT message,\r\nWPARAM wParam, LPARAM lParam);\r\nvoid EnableOpenGL (HWND hWnd, HDC *hDC, HGLRC *hRC);\r\nvoid DisableOpenGL (HWND hWnd, HDC hDC, HGLRC hRC);\r\n\r\n\r\n/**************************\r\n * WinMain\r\n *\r\n **************************/\r\n\r\nint WINAPI WinMain (HINSTANCE hInstance,\r\n                    HINSTANCE hPrevInstance,\r\n                    LPSTR lpCmdLine,\r\n                    int iCmdShow)\r\n{\r\n    WNDCLASS wc;\r\n    HWND hWnd;\r\n    HDC hDC;\r\n    HGLRC hRC;        \r\n    MSG msg;\r\n    BOOL bQuit = FALSE;\r\n    float theta = 0.0f;\r\n\r\n    /* register window class */\r\n    wc.style = CS_OWNDC;\r\n    wc.lpfnWndProc = WndProc;\r\n    wc.cbClsExtra = 0;\r\n    wc.cbWndExtra = 0;\r\n    wc.hInstance = hInstance;\r\n    wc.hIcon = LoadIcon (NULL, IDI_APPLICATION);\r\n    wc.hCursor = LoadCursor (NULL, IDC_ARROW);\r\n    wc.hbrBackground = (HBRUSH) GetStockObject (BLACK_BRUSH);\r\n    wc.lpszMenuName = NULL;\r\n    wc.lpszClassName = \"GLSample\";\r\n    RegisterClass (&wc);\r\n\r\n    /* create main window */\r\n    hWnd = CreateWindow (\r\n      \"GLSample\", \"OpenGL Sample\", \r\n      WS_CAPTION | WS_POPUPWINDOW | WS_VISIBLE,\r\n      0, 0, 256, 256,\r\n      NULL, NULL, hInstance, NULL);\r\n\r\n    /* enable OpenGL for the window */\r\n    EnableOpenGL (hWnd, &hDC, &hRC);\r\n\r\n    /* program main loop */\r\n    while (!bQuit)\r\n    {\r\n        /* check for messages */\r\n        if (PeekMessage (&msg, NULL, 0, 0, PM_REMOVE))\r\n        {\r\n            /* handle or dispatch messages */\r\n            if (msg.message == WM_QUIT)\r\n            {\r\n                bQuit = TRUE;\r\n            }\r\n            else\r\n            {\r\n                TranslateMessage (&msg);\r\n                DispatchMessage (&msg);\r\n            }\r\n        }\r\n        else\r\n        {\r\n            /* OpenGL animation code goes here */\r\n\r\n            glClearColor (0.0f, 0.0f, 0.0f, 0.0f);\r\n            glClear (GL_COLOR_BUFFER_BIT);\r\n\r\n            glPushMatrix ();\r\n            glRotatef (theta, 0.0f, 0.0f, 1.0f);\r\n            glBegin (GL_TRIANGLES);\r\n            glColor3f (1.0f, 0.0f, 0.0f);   glVertex2f (0.0f, 1.0f);\r\n            glColor3f (0.0f, 1.0f, 0.0f);   glVertex2f (0.87f, -0.5f);\r\n            glColor3f (0.0f, 0.0f, 1.0f);   glVertex2f (-0.87f, -0.5f);\r\n            glEnd ();\r\n            glPopMatrix ();\r\n\r\n            SwapBuffers (hDC);\r\n\r\n            theta += 1.0f;\r\n            Sleep (1);\r\n        }\r\n    }\r\n\r\n    /* shutdown OpenGL */\r\n    DisableOpenGL (hWnd, hDC, hRC);\r\n\r\n    /* destroy the window explicitly */\r\n    DestroyWindow (hWnd);\r\n\r\n    return msg.wParam;\r\n}\r\n\r\n\r\n/********************\r\n * Window Procedure\r\n *\r\n ********************/\r\n\r\nLRESULT CALLBACK WndProc (HWND hWnd, UINT message,\r\n                          WPARAM wParam, LPARAM lParam)\r\n{\r\n\r\n    switch (message)\r\n    {\r\n    case WM_CREATE:\r\n        return 0;\r\n    case WM_CLOSE:\r\n        PostQuitMessage (0);\r\n        return 0;\r\n\r\n    case WM_DESTROY:\r\n        return 0;\r\n\r\n    case WM_KEYDOWN:\r\n        switch (wParam)\r\n        {\r\n        case VK_ESCAPE:\r\n            PostQuitMessage(0);\r\n            return 0;\r\n        }\r\n        return 0;\r\n\r\n    default:\r\n        return DefWindowProc (hWnd, message, wParam, lParam);\r\n    }\r\n}\r\n\r\n\r\n/*******************\r\n * Enable OpenGL\r\n *\r\n *******************/\r\n\r\nvoid EnableOpenGL (HWND hWnd, HDC *hDC, HGLRC *hRC)\r\n{\r\n    PIXELFORMATDESCRIPTOR pfd;\r\n    int iFormat;\r\n\r\n    /* get the device context (DC) */\r\n    *hDC = GetDC (hWnd);\r\n\r\n    /* set the pixel format for the DC */\r\n    ZeroMemory (&pfd, sizeof (pfd));\r\n    pfd.nSize = sizeof (pfd);\r\n    pfd.nVersion = 1;\r\n    pfd.dwFlags = PFD_DRAW_TO_WINDOW | \r\n      PFD_SUPPORT_OPENGL | PFD_DOUBLEBUFFER;\r\n    pfd.iPixelType = PFD_TYPE_RGBA;\r\n    pfd.cColorBits = 24;\r\n    pfd.cDepthBits = 16;\r\n    pfd.iLayerType = PFD_MAIN_PLANE;\r\n    iFormat = ChoosePixelFormat (*hDC, &pfd);\r\n    SetPixelFormat (*hDC, iFormat, &pfd);\r\n\r\n    /* create and enable the render context (RC) */\r\n    *hRC = wglCreateContext( *hDC );\r\n    wglMakeCurrent( *hDC, *hRC );\r\n\r\n}\r\n\r\n\r\n/******************\r\n * Disable OpenGL\r\n *\r\n ******************/\r\n\r\nvoid DisableOpenGL (HWND hWnd, HDC hDC, HGLRC hRC)\r\n{\r\n    wglMakeCurrent (NULL, NULL);\r\n    wglDeleteContext (hRC);\r\n    ReleaseDC (hWnd, hDC);\r\n}\r\n",
+  "openmp_c.txt": "#include <omp.h>\r\n#include <stdio.h>\r\n\r\nint main() {\r\n\t\r\n\tint i;\r\n\r\n\t#pragma omp parallel num_threads(2)\r\n\tprintf(\"Hi, I'm thread number %d!\\n\",omp_get_thread_num());\r\n\r\n\t#pragma omp parallel for num_threads(2)\r\n\tfor(i = 0;i < 20;i++) {\r\n\t\tprintf(\"\\nThread number %d, executing iteration %d...\",omp_get_thread_num(),i);\t\t\r\n\t}\r\n\t\r\n\treturn 0;\r\n}\r\n",
+  "openmp_cpp.txt": "#include <omp.h>\r\n#include <stdio.h>\r\n\r\n// not using iostream here due to output ordering issues\r\n\r\n// iostream tends to output each part between <<'s separately to the console, \r\n// which can lead to random output if multiple threads are doing the same\r\n// thing.\r\n\r\n// printf will generally output the whole result string in one go, so results\r\n// of separate printf calls, even from different threads, will remain intact\r\n\r\n// Another fix, other than using printf, would be to give each thread its own \r\n// place to store output temporarily (a stringstream), and then output the whole\r\n// result in one go.\r\n\r\nint main() {\r\n\r\n\t#pragma omp parallel num_threads(2)\r\n\tprintf(\"Hi, I'm thread number %d!\\n\",omp_get_thread_num());\r\n\r\n\t#pragma omp parallel for num_threads(2)\r\n\tfor(int i = 0;i < 20;i++) {\r\n\t\tprintf(\"\\nThread number %d, executing iteration %d...\",omp_get_thread_num(),i);\t\t\r\n\t}\r\n}",
+  "stdthread_c.txt": "// Please note that MinGW32 compilers currently do not support <thread>. Use MinGW64 builds like TDM-GCC instead.\r\n// C does not support this magic ;)",
+  "stdthread_cpp.txt": "// Please note that MinGW32 compilers currently do not support <thread>. Use MinGW64 builds like TDM-GCC instead.\r\n\r\n#include <thread>\r\nusing std::thread;\r\n#include <vector>\r\nusing std::vector;\r\n#include <stdio.h>\r\n\r\nstruct ThreadItem {\r\n\tchar* result; // could've used stringstream too, but don't like their syntax\r\n\tthread worker;\r\n};\r\n\r\nvoid* ThreadFunction(char** result) {\r\n\t*result = new char[256];\r\n\tsnprintf(*result,256,\"Hello World from thread ID %d\",\r\n\t\tstd::this_thread::get_id());\r\n}\r\n\r\nint main() {\r\n\t// Get the amount of \"processing units\"\r\n\tint n = std::thread::hardware_concurrency();\r\n\t\r\n\t// Create array of threads\r\n\tvector<ThreadItem> threadlist;\r\n\tthreadlist.resize(n);\r\n\t\r\n\t// Spawn a thread for each core\r\n\tfor(int i = 0;i < n;i++) {\r\n\t\tthreadlist[i].worker = thread(ThreadFunction,&threadlist[i].result); // pass rand() as data argument\r\n\t}\r\n\t\r\n\t// Wait for them all to finish\r\n\tfor(int i = 0;i < n;i++) {\r\n\t\tthreadlist[i].worker.join();\r\n\t}\r\n\t\r\n\t// Present their calculation results\r\n\tprintf(\"Results:\\n\");\r\n\tfor(int i = 0;i < n;i++) {\r\n\t\tprintf(\"%s\\n\",threadlist[i].result);\r\n\t}\r\n}",
+  "winanim_c.txt": "/* \r\n   Name: WinAnim\r\n   Author: Brook Miles\r\n   Description: Making an animation in windows\r\n*/\r\n\r\n#include <windows.h>\r\n\r\nstatic char g_szClassName[] = \"MyWindowClass\";\r\nstatic HINSTANCE g_hInst = NULL;\r\n\r\nconst UINT idTimer1 = 1;\r\nUINT nTimerDelay = 10;\r\n\r\nHBITMAP hbmBall, hbmMask;\r\nBITMAP bm;\r\n\r\nint ballX, ballY;\r\nint deltaX, deltaY;\r\n\r\nint deltaValue = 4;\r\n\r\nvoid EraseBall(HDC hdc)\r\n{\r\n   RECT rc;\r\n   rc.left = ballX;\r\n   rc.top = ballY;\r\n   rc.right = ballX + bm.bmWidth;\r\n   rc.bottom = ballY + bm.bmHeight;\r\n   FillRect(hdc, &rc, (HBRUSH)(COLOR_BTNFACE+1));\r\n}\r\n\r\nvoid DrawBall(HDC hdc)\r\n{\r\n   HDC hdcMemory;\r\n   hdcMemory = CreateCompatibleDC(hdc);\r\n\r\n   SelectObject(hdcMemory, hbmMask);\r\n   BitBlt(hdc, ballX, ballY, bm.bmWidth, bm.bmHeight, hdcMemory, 0, 0, SRCAND);\r\n\r\n   SelectObject(hdcMemory, hbmBall);\r\n   BitBlt(hdc, ballX, ballY, bm.bmWidth, bm.bmHeight, hdcMemory, 0, 0, SRCPAINT);\r\n\r\n   DeleteDC(hdcMemory);\r\n}\r\n\r\nvoid UpdateBall(HWND hwnd)\r\n{\r\n   RECT rc;\r\n   GetClientRect(hwnd, &rc);\r\n\r\n   ballX += deltaX;\r\n   ballY += deltaY;\r\n\r\n   if(ballX < 0){\r\n      ballX = 0;\r\n      deltaX = deltaValue;\r\n   }\r\n   else if(ballX + bm.bmWidth > rc.right){\r\n      ballX = rc.right - bm.bmWidth;\r\n      deltaX = -deltaValue;\r\n   }\r\n   if(ballY < 0){\r\n      ballY = 0;\r\n      deltaY = deltaValue;\r\n   }\r\n   else if(ballY + bm.bmHeight > rc.bottom){\r\n      ballY = rc.bottom - bm.bmHeight;\r\n      deltaY = -deltaValue;\r\n   }\r\n}\r\n\r\nLRESULT CALLBACK WndProc(HWND hwnd, UINT Message, WPARAM wParam, LPARAM lParam)\r\n{\r\n   switch(Message)\r\n   {\r\n      case WM_CREATE:\r\n         hbmBall = LoadBitmap(g_hInst, \"BALLBMP\");\r\n         hbmMask = LoadBitmap(g_hInst, \"MASKBMP\");\r\n         if(!hbmBall || !hbmMask){\r\n            MessageBox(hwnd, \"Load of resources failed.\", \"Error\",\r\n               MB_OK | MB_ICONEXCLAMATION);\r\n            return -1;\r\n         }\r\n\r\n         GetObject(hbmBall, sizeof(bm), &bm);\r\n         SetTimer(hwnd, idTimer1, nTimerDelay, NULL);\r\n\r\n         ballX = 0;\r\n         ballY = 0;\r\n         deltaX = deltaValue;\r\n         deltaY = deltaValue;\r\n\r\n      break;\r\n      case WM_TIMER:\r\n         if(hbmBall && hbmMask)\r\n         {\r\n            HDC hdcWindow;\r\n            hdcWindow = GetDC(hwnd);\r\n\r\n            EraseBall(hdcWindow);\r\n            UpdateBall(hwnd);\r\n            DrawBall(hdcWindow);\r\n\r\n            ReleaseDC(hwnd, hdcWindow);\r\n         }\r\n      break;\r\n      case WM_PAINT:\r\n         if(hbmBall && hbmMask)\r\n         {\r\n            PAINTSTRUCT ps;\r\n            HDC hdcWindow;\r\n            hdcWindow = BeginPaint(hwnd, &ps);\r\n\r\n            DrawBall(hdcWindow);\r\n            \r\n            EndPaint(hwnd, &ps);\r\n         }\r\n      break;\r\n      case WM_CLOSE:\r\n         DestroyWindow(hwnd);\r\n      break;\r\n      case WM_DESTROY:\r\n         KillTimer(hwnd, idTimer1);\r\n         \r\n         DeleteObject(hbmBall);\r\n         DeleteObject(hbmMask);\r\n         PostQuitMessage(0);\r\n      break;\r\n      default:\r\n         return DefWindowProc(hwnd, Message, wParam, lParam);\r\n   }\r\n   return 0;\r\n}\r\n\r\n\r\nint WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,\r\n   LPSTR lpCmdLine, int nCmdShow)\r\n{\r\n   WNDCLASSEX WndClass;\r\n   HWND hwnd;\r\n   MSG Msg;\r\n\r\n   g_hInst = hInstance;\r\n\r\n   WndClass.cbSize        = sizeof(WNDCLASSEX);\r\n   WndClass.style         = 0;\r\n   WndClass.lpfnWndProc   = WndProc;\r\n   WndClass.cbClsExtra    = 0;\r\n   WndClass.cbWndExtra    = 0;\r\n   WndClass.hInstance     = g_hInst;\r\n   WndClass.hIcon         = LoadIcon(NULL, IDI_APPLICATION);\r\n   WndClass.hCursor       = LoadCursor(NULL, IDC_ARROW);\r\n   WndClass.hbrBackground = (HBRUSH)(COLOR_BTNFACE+1);\r\n   WndClass.lpszMenuName  = NULL;\r\n   WndClass.lpszClassName = g_szClassName;\r\n   WndClass.hIconSm       = LoadIcon(NULL, IDI_APPLICATION);\r\n\r\n   if(!RegisterClassEx(&WndClass))\r\n   {\r\n      MessageBox(0, \"Window Registration Failed!\", \"Error!\",\r\n         MB_ICONEXCLAMATION | MB_OK | MB_SYSTEMMODAL);\r\n      return 0;\r\n   }\r\n\r\n   hwnd = CreateWindowEx(\r\n      WS_EX_CLIENTEDGE,\r\n      g_szClassName,\r\n      \"A Bitmap Program\",\r\n      WS_OVERLAPPEDWINDOW,\r\n      CW_USEDEFAULT, CW_USEDEFAULT, 320, 240,\r\n      NULL, NULL, g_hInst, NULL);\r\n\r\n   if(hwnd == NULL)\r\n   {\r\n      MessageBox(0, \"Window Creation Failed!\", \"Error!\",\r\n         MB_ICONEXCLAMATION | MB_OK | MB_SYSTEMMODAL);\r\n      return 0;\r\n   }\r\n\r\n   ShowWindow(hwnd, nCmdShow);\r\n   UpdateWindow(hwnd);\r\n\r\n   while(GetMessage(&Msg, NULL, 0, 0))\r\n   {\r\n      TranslateMessage(&Msg);\r\n      DispatchMessage(&Msg);\r\n   }\r\n   return Msg.wParam;\r\n}\r\n\r\n",
+  "winanim_rc.txt": "BALLBMP BITMAP \"ball.bmp\" // can be found in the Templates folder, please copy to the project folder\r\nMASKBMP BITMAP \"ballmask.bmp\" // as above"
+ }
+}

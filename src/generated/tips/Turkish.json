@@ -1,0 +1,22 @@
+[
+"...bu ipuçlarını kapatmak istermisiniz?<CR><CR>İpuçları başka yerde bulamayan dökümante edilmemiş bilgileri burada sunar.<CR>Eğer bunları kapatıp daha sonra görmek isterseniz, \"Yardım / Günün İpucu\" bölümünü seçiniz...",
+"...Dev-C++ ortamının en son hata düzetmelerle ve yeni özelliklerle güncel kalmasını WebUpdate ile yapabilirsiniz.<CR><CR>\"Araçlar / Günceleme/ Paket kontrol yap...\" seçeneğini seçiniz.",
+"...Kod Tamamlama özelliği, mevcut içerik içerisindeki tüm ihtimali komutları tavisyelerde bulunarak sizin verimliğimizi arttırır.<CR><CR>Kod tamamlamayı aktif etmek için, \"Araçlar / Editör Ayarları\" bölümüne gidiniz ve sınıf gezgini bölümünde kod tamamlamayı seçiniz.",
+"...Kod Tamamlama özelliği, siz editör içinde \".\", \"->\" veya \"::\" yazdığınızda berlilenen zaman aşım süresine göre tetiklenir.<CR><CR>Bu zaman aşımı için \"Araçlar / Editör Ayarları / Sınıf Gezgini / Kod Tamamlama\" bölümüne gidiniz.",
+"...Kod Tamamlama özelliğini editör penceresinde iken \"Ctrl+Space\" basarak tetikeyebilirsiniz.<CR><CR>( İmleç fonsiyon argüman parantezi içersinde iken \"Ctrl+Shift+Space\" tuşlarına basmayı deneyizniz...)",
+"...Sınıf Gezgini elemanlarının üzerinde shift-klik ile declerasyonun uygulamasına gidilir.<CR> elbette, içerik menüsünde aynı fonkisyon ve de daha fazlası için kullanılabilir.",
+"...Büyük projeler için Sınıf Gezgini içine özel diziler eklenerek aradığınızı daha kolay bulabilirsiniz. Hatta, özel fonsiyonları içiçe yapabilirsiniz!<CR><CR>içerik menüsünü getirirken, sadece Sınıf Gezgini içinde sağ-klik yapınız.",
+"...Sınıf Gezgini Özel Dizinlerin bilgisi projenizin kök dizini içersinde \"classfloders.dcf\" isimli dosyada saklanır.<CR><CR>Eğer herhangi birşey yanlış giderde bu dosya bozulursa, Sadece bu dosyayı silin ve projenizi tekrar açın!",
+"...Sınıf Gezgini için iki tane görüntü modu vardır.<CR>Birincisi Proje içindeki tüm sınıfları/üyeleri/fonksiyonları ayrıştırır ve diğer ise *sadece* o anda düzenlenen dosyanın anlamalı bilgilerini gösterir.<CR><CR>Sadece Sınıf Gezgini içersindeyken sağ-klik ve \"Görünüm Modu\" nu seçiniz...",
+"...Proje Yöneticisi içindeki dosyanın tek-klikle veya çift-klikle açılacağını belirleyebilirsiniz.<CR><CR>Tanımlama için \"Araçlar /  Çevre Ayarları\" bölününe gidiniz ve \"Proje Yönetim Dosyalarını açmak için çift tıklayın\" seçiniz ( veya kaldırınız )",
+"...Dosyalarınızı daha iyi organize ederken, Proje Yöneticisi içinde özel ( sadece üst-seviyede ) diziler tanımlayabilirsiniz.<CR><CR>Bunu yapmak için, proje yöneticisi içinde sağ klik ile içerik menüsü getrilir...",
+"...Eğer Proje Yöneticisi içinde özel diziler yaratıysanız, sürükle && bırak ile bunları düzenleyebilirsiniz.",
+"...Üzerinde çalıştığınız dosya hakkında bilgi alabilrisiniz.<CR><CR>\"Dosya / Özellikler\" Seçiniz ve buradan dosyanın boyu,  satır, satır açıklamaları, boş satırlar, dahil edilen dosyaların sayılarını görün.",
+"... projenizi sablon olarak kaydedebilirsiniz.<CR><CR>\"Dosya / Yeni / Şablon\" seçiniz. Bu projenizi Dev-C++ sablonu olarak kaydeder ve \"Dosya / Yeni / Proje\" bölümünde mevcut olacaktır.<CR>Bu yol ile kodlamaya beğendiniz bir şekilde başlayabilirsiniz.",
+"...Dev-C++'a MS Visual C++ projeleri ithal edebilirsiniz.<CR><CR>Sadece \"Dosya / İthal et / MS Visual C++ projesini İthal et\" seçeneğini seçiniz.<CR>proje seçeneklerinde ufak tefek ayarlamalar yapmanız gerekebilir fakat hey çalışmalar devam ediyor!",
+"...Bütün Proje HTML veya RTF olarak ihraç edilebilir.<CR>Bu yolla kaynak kodlarınızı tüm dünya ile paylaşmak için bir web sitesine yükleyebilirsiniz!<CR><CR>Sadece \"Dosya / İhraç\" üzerine tıklayınız ve ihtaç metodunu seçiniz...",
+"...Seçtiğiniz satırı \"Düzen / Yorumla ( Kaldır ) \" ile Yorum haline getirebilir veya kaldırabilirsiniz.",
+"...Seçtiğiniz satırı \"Düzen / Girintili ( Girintisiz )\" ile girintilenebilir veya girintisiz kaldırılabilir.",
+"...Kod üzerinde dolaşmak için Yer imlerini kullanınız.<CR><CR>Yer imlerini yerleştirmek ve kaldırmak için \"Düzen / Yer İmlerini Değiştirme\" seçeneği üzerine tıklayıp Yer imi numarasını seçiniz.<CR>Yer imine gitmek için \"Düzen / Yer İmlerine Git\" seçeneğinden yer imi numarasını seçiniz.",
+"...Güçlü bir \"Ara\" Menüsü içersinde \"Fonksiyona Git\" komutu bulunmaktadır.<CR><CR>Bu tüm dosyaların fonksiyonlarını görüntüler ve fonksiyonun adının bir parçasının yazılası ile liste süzülür. Fonsiyona hemen gitmek için enter'e basınız!<CR>Not: sınıf gezme işlevi açık olmalıdır."
+]

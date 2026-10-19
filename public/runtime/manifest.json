@@ -1,0 +1,12 @@
+{
+ "version": 1792313737549,
+ "files": [
+  "devcpp_crt.o",
+  "devcpp_cxxrt.o",
+  "include/bits/stdc++.h",
+  "include/conio.h",
+  "include/devcpp_compat.h",
+  "include/windows.h",
+  "libdevcpp_eh.a"
+ ]
+}

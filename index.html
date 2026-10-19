@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Dev-C++ 网页版 · 在线 C++ 编译器与 IDE（浏览器内运行）</title>
+    <meta
+      name="description"
+      content="Dev-C++ 5.11 网页版：在浏览器中直接编写、编译、运行 C++，无需安装。基于 Clang/WebAssembly 的在线 C++ IDE，还原经典 Dev-C++ 界面，支持语法高亮、代码补全、项目管理与本地虚拟文件系统。"
+    />
+    <meta
+      name="keywords"
+      content="Dev-C++,Dev-C++ 网页版,Dev-C++ Web,在线 C++ 编译器,在线编译 C++,C++ 在线运行,浏览器 C++ IDE,WebAssembly,Clang,在线 IDE,C++ 练习环境"
+    />
+    <meta name="author" content="Dev-C++ Web contributors" />
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1" />
+    <meta name="theme-color" content="#0a246a" />
+    <meta name="color-scheme" content="light" />
+
+    <link rel="canonical" href="https://devcppweb.vercel.app/" />
+    <link rel="icon" href="./favicon.ico" sizes="any" />
+
+    <!-- Open Graph / 社交分享 -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Dev-C++ Web" />
+    <meta property="og:locale" content="zh_CN" />
+    <meta property="og:title" content="Dev-C++ 网页版：浏览器里的 C++ IDE 与在线编译器" />
+    <meta
+      property="og:description"
+      content="打开网页就能写 C++，按 F11 编译并运行。Clang/WebAssembly 驱动，还原 Dev-C++ 5.11 经典界面，免费、无需安装。"
+    />
+    <meta property="og:url" content="https://devcppweb.vercel.app/" />
+    <meta property="og:image" content="https://devcppweb.vercel.app/og-image.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Dev-C++ 网页版界面：浏览器中的 C++ IDE 与在线编译器" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Dev-C++ 网页版：浏览器里的 C++ IDE 与在线编译器" />
+    <meta
+      name="twitter:description"
+      content="打开网页就能写 C++，按 F11 编译并运行。Clang/WebAssembly 驱动，还原 Dev-C++ 5.11 经典界面，免费、无需安装。"
+    />
+    <meta name="twitter:image" content="https://devcppweb.vercel.app/og-image.png" />
+    <meta name="twitter:image:alt" content="Dev-C++ 网页版界面：浏览器中的 C++ IDE 与在线编译器" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://devcppweb.vercel.app/#website",
+            "url": "https://devcppweb.vercel.app/",
+            "name": "Dev-C++ Web",
+            "alternateName": ["Dev-C++ 网页版", "Dev-C++ Online"],
+            "inLanguage": "zh-CN"
+          },
+          {
+            "@type": "SoftwareApplication",
+            "@id": "https://devcppweb.vercel.app/#app",
+            "name": "Dev-C++ Web",
+            "alternateName": "Dev-C++ 网页版",
+            "url": "https://devcppweb.vercel.app/",
+            "applicationCategory": "DeveloperApplication",
+            "applicationSubCategory": "Integrated Development Environment",
+            "operatingSystem": "Web browser (Chrome, Edge, Firefox, Safari)",
+            "browserRequirements": "Requires WebAssembly and SharedArrayBuffer",
+            "softwareVersion": "5.11",
+            "isAccessibleForFree": true,
+            "inLanguage": ["zh-CN", "en"],
+            "offers": { "@type": "Offer", "price": "0", "priceCurrency": "CNY" },
+            "description": "用 React、CodeMirror 和 Clang/WebAssembly 重建的 Dev-C++ 5.11 网页版。在浏览器中编写、编译并运行 C++，支持语法高亮、代码补全、项目管理、搜索替换和虚拟文件系统，代码不会上传到服务器。",
+            "featureList": [
+              "在线编译和运行 C++",
+              "Clang/WebAssembly 本地编译",
+              "F11 一键编译并运行",
+              "CodeMirror 语法高亮与代码补全",
+              "还原 Dev-C++ 5.11 的 Windows 桌面界面",
+              "项目管理和多文件编译",
+              "浏览器内虚拟文件系统与 IndexedDB 持久化"
+            ],
+            "screenshot": "https://devcppweb.vercel.app/og-image.png",
+            "isPartOf": { "@id": "https://devcppweb.vercel.app/#website" }
+          }
+        ]
+      }
+    </script>
+
+    <style>
+      .seo-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+        border: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 供搜索引擎和读屏软件读取的页面说明；视觉上不可见，不影响桌面界面布局。 -->
+    <div class="seo-only">
+      <h1>Dev-C++ 网页版：浏览器里的 C++ IDE 与在线编译器</h1>
+      <p>
+        Dev-C++ Web 用 React、CodeMirror 和 Clang/WebAssembly 重建了 Dev-C++
+        5.11 的桌面界面。打开网页即可新建 C++ 源文件，按 F11 保存、编译并运行，不需要安装任何软件。支持 C++17/20、语法高亮、自动补全、项目管理、搜索替换和虚拟文件系统。编译器完全在浏览器本地运行，代码不会上传到服务器。
+      </p>
+      <h2>主要功能</h2>
+      <ul>
+        <li>在线编译 C++ 并直接运行，支持控制台键盘输入</li>
+        <li>Clang/WebAssembly 工具链，本地编译，保护代码隐私</li>
+        <li>经典 Dev-C++ 5.11 界面、图标、菜单和快捷键</li>
+        <li>CodeMirror 编辑器的语法高亮、自动补全与搜索替换</li>
+        <li>项目、多文件编译、增量构建和结果缓存</li>
+        <li>浏览器内虚拟文件系统，刷新后文件仍然保留</li>
+      </ul>
+      <h2>使用方式</h2>
+      <p>
+        用桌面版 Chrome 或 Edge 打开本站，首次加载会下载约 100 MiB 的编译器资源；之后可以新建源文件、打开示例项目，或从电脑导入文件夹。编译输出为 WebAssembly 格式，并非 Windows 原生程序。
+      </p>
+      <p>
+        在线地址：<a href="https://devcppweb.vercel.app/">https://devcppweb.vercel.app/</a>
+      </p>
+    </div>
+
+    <div id="root"></div>
+
+    <noscript>
+      <div style="max-width: 720px; margin: 48px auto; padding: 0 20px; font: 16px/1.7 system-ui, -apple-system, 'Segoe UI', sans-serif; color: #222">
+        <h1>Dev-C++ 网页版：浏览器里的 C++ IDE 与在线编译器</h1>
+        <p>
+          Dev-C++ Web 用 React、CodeMirror 和 Clang/WebAssembly 重建了 Dev-C++
+          5.11 的桌面界面。在浏览器中编写、编译并运行 C++，无需安装。
+        </p>
+        <p>本站需要启用 JavaScript 和 WebAssembly 才能运行。</p>
+        <ul>
+          <li>在线编译 C++ 并直接运行</li>
+          <li>Clang/WebAssembly 本地编译，代码不上传</li>
+          <li>经典 Dev-C++ 5.11 界面与快捷键</li>
+          <li>语法高亮、代码补全、项目管理和虚拟文件系统</li>
+        </ul>
+        <p>
+          <a href="https://devcppweb.vercel.app/">https://devcppweb.vercel.app/</a>
+        </p>
+      </div>
+    </noscript>
+
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

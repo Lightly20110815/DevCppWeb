@@ -1,0 +1,22 @@
+[
+"...miért kellenek ezek a tippek?<CR><CR>A tippek sok nem dokumentált hasznos információt tartalmaznak amelyek máshol nem találhatóak meg.<CR>Ha kikapcsolja az indulási tippeket és később szeretné megnézni a \"Segítség / A nap tippje\" menüvel teheti meg.",
+"...a vUpdate segítségével könnyedén hozzájuthat a Dev-C++ legfrissebb verzióihoz hibajavításaihoz?<CR><CR>Használja az \"Eszközök / Frissítések/Csomagok Keresése\" menüt.",
+"...a kódkiegészítés hatékonyan segít az adott környezetben lehetséges összes kódrészlet felfedésével?<CR><CR>A kódkiegészítést az \"Eszközök / Szerkesztő Beállításai\" menüből kapcsolhatja be az Osztály tallózás részben.",
+"...a kódkiegészítés a beállított késleltetés után elindul ,ha \".\", \"->\", \"::\" -ot ír a forráskódba?<CR><CR>A késleltetési idő az \"Eszközök / Szerkesztő Beállításai\" menüből az Osztály tallózás részben állítható be.",
+"...bármikor elindítható a kódkiegészítés a \"CTRL-Space\" billentyű kombinációval?<CR><CR>(Használja a \"Ctrl+Shift+Space\" kombinációt amikor a kurzol a függvény argumentumait tartalmazó zárójelek között áll...)",
+"...\"Shift-double-click\"-el az Osztály Lista panelon a kijelölt elem definíciójához juthat?<CR>Természetesen használhatja erre a célra (és még sok másra is) a jobbgombos menüt az Osztály Lista panelon...",
+"...az Osztály Listában létrehozhat könyvtárakat hogy a nagyobb projektekben is könnyedén megtalálja amit keres? Szeretné tudni hogyan!<CR><CR>Csak jobb-klikk az Osztály Lista panelen...",
+"...az Osztály Listában létrehozott könyvtárakról a \"classfolders.dcf\" fájl tárol információkat a projekt könyvtárban?<CR><CR>Ha valami nem megfelelő a listában csak törölje ki ezt a fájlt, és nyissa meg újra a projektet!",
+"...az Osztály Lista panelnak két megjelenítési módja van?<CR>Az egyik az összes a projektben található osztályt/tagot/függvényt kilistáz, a második pedig csak az aktuálisan szerkesztett fájlra mutatja ugyanezeket az információkat.<CR><CR>A két mód között a jobboldal egérgomb kattintásával megjelenő menüből a \"Nézet Mód\" menüben válthat...",
+"...beállíthatja, hogy simpla vagy dupla kattintással lehessen a Projekt Menedzserből a fájlokat megnyitni?<CR><CR>A beállítás az \"Eszközök / Környezeti Beállítások\" menüből érhető el...",
+"...a Projekt Menedzserben létrehozhat könyvtárakat (csak a legfelső szinten) a fájlok átláthatóbb elhelyezése érdekében?<CR><CR>Megteheti a Projekt Menedszerben a jobb-klikkel hívható menüből (a legfelső szinten) a \"Könyvtár Hozzáadása\" menüből.",
+"...ha új könyvtárat hoz létre,a fájlokat Drag&&Drop-val mozgathatja a könytárakba?",
+"...információt kaphat arról a fájlról amelyiken dolgozik?<CR><CR>Kiválasztva a \"Fájl / Tulajdonságok\" pontot, információt kap a fájl méretéről, a sorok számáról, megjegyzések, üres sorok és az include utasítást tartalmazó sorok számáról!",
+"...lementheti a projektjét mint template?<CR><CR>Válassza ki a \"Fájl / Új / Template\" pontját. Ez lementi a projektet mint Dev-C++ template, amely elérhető lesz a \"Fájl / Új / Projekt\" pontban.<CR>Így lesz egy alapja, amelyből kiindulhat, az ön ízlésének megfelelően!",
+"...importálhat MS Visual C++ projekteket a Dev-C++ -be?<CR><CR>Csak válassza a \"Fájl / Import / MS Visual C++ projekt importálás\" pontot.<CR>Lehet, hogy egy kicsit módosítani kell a projekt beállításain az importálás után, de végülis ez a rész még fejlesztés alatt áll!",
+"...exportálhatja a forrás fájlt vagy a teljes projektet mint HTML vagy RTF formátumú fájl?<CR>Ezzel a lehetőséggel feltöltheti a forrásait egy website-ra, hogy megossza azt a világgal!<CR><CR>Egyszerűen válassza a \"Fájl / Export\" pontot és válassza ki az exportálás formátumát...",
+"...megváltoztathatja a sorok kommentezését, kiválasztva a sorokat, majd ráklikkelve a \"Szerkesztés / Megjegyzés (be/ki)\" pontra?",
+"...megváltoztathatja a sorok bekezdésének mértékét, kiválasztva a sorokat, és a \"Szerkesztés / Bekezdés (be/ki)\" ponttal?",
+"...használhat könyvjelzőket a szerkesztőben, hogy a forrásban gyorsan tudjon mozogni?<CR><CR>Be- vagy kikapcsolhatja a könyvjelzőt a \"Szerkesztés / Könyvjelző elhelyezése\" pontban, kiválasztva a könyvjelző számát.<CR>Egy adott könyvjelzőhöz ugorhat a \"Szerkesztés / Könyvjelzőre ugrás\" pontban, kiválasztva a könyvjelző számát.",
+"...létezik egy nagyszerű \"Függvényre ugrás\" parancs a \"Keresés\" menüben?<CR><CR>Megjeleníti a fájl összes függvényét, amely a megadott szövegrészlettel kezdődik. Nyomja le az enter-t és azonnal a függvényhez kerül!<CR>Vigyázat: az osztály böngészésnek engedélyezve kell lennie ..."
+]

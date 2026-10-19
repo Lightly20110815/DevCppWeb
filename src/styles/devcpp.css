@@ -1,0 +1,528 @@
+/* ---------------------------------------------------------------- Dev-C++ main window */
+.mainwin {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  background: #f0f0f0;
+}
+.win.fullscreen .win-title {
+  display: none;
+}
+
+.controlbar {
+  position: relative;
+  flex: none;
+  background: #f0f0f0;
+  border-top: 1px solid #fff;
+}
+.cb-band {
+  position: absolute;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #a0a0a0;
+  border-bottom: 1px solid #a0a0a0;
+}
+.cb-grip {
+  width: 11px;
+  height: 100%;
+  flex: none;
+  cursor: move;
+  position: relative;
+}
+.cb-grip::before,
+.cb-grip::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  bottom: 3px;
+  width: 1px;
+  border-left: 1px solid #a0a0a0;
+  border-right: 1px solid #fff;
+}
+.cb-grip::before {
+  left: 3px;
+}
+.cb-grip::after {
+  left: 6px;
+}
+.cb-content {
+  display: flex;
+  align-items: center;
+  height: 22px;
+}
+.tb-btn {
+  width: 23px;
+  height: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  flex: none;
+}
+.tb-btn:hover:not(.disabled) {
+  background: #e5f3ff;
+  border-color: #cce8ff;
+}
+.tb-btn:active:not(.disabled) {
+  background: #cce8ff;
+  border-color: #99d1ff;
+}
+.tb-sep {
+  width: 8px;
+  height: 22px;
+  flex: none;
+  position: relative;
+}
+.tb-sep::after {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 2px;
+  bottom: 2px;
+  border-left: 1px solid #c0c0c0;
+}
+.tb-combo {
+  flex: none;
+}
+.tb-combo.mono .vcombo-text,
+.tb-combo.mono .dl-item {
+  font-family: 'Courier New', monospace;
+  font-size: 11px;
+}
+
+.main-middle {
+  flex: 1;
+  display: flex;
+  min-height: 0;
+}
+
+.splitter-v {
+  width: 3px;
+  flex: none;
+  cursor: ew-resize;
+  background: #f0f0f0;
+}
+.splitter-h {
+  height: 3px;
+  flex: none;
+  cursor: ns-resize;
+  background: #f0f0f0;
+}
+
+.leftpanel {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.leftpanel > .vtabs {
+  flex: none;
+}
+.leftpanel-page {
+  flex: 1;
+  position: relative;
+  border: 1px solid #d9d9d9;
+  margin-top: -1px;
+  background: #fff;
+  min-height: 0;
+}
+.projectview,
+.classbrowser {
+  position: absolute !important;
+  inset: 0;
+  border: none !important;
+}
+.classbrowser .tv-text b {
+  font-weight: bold;
+}
+.cb-args {
+  color: #800000;
+  font-weight: normal;
+  margin-left: 0;
+}
+.cb-type {
+  color: #808080;
+  font-weight: normal;
+  margin-left: 3px;
+}
+
+.editor-area {
+  flex: 1;
+  display: flex;
+  min-width: 0;
+  background: #f0f0f0;
+}
+.editor-pane {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+.editor-tabs {
+  flex: none;
+}
+.editor-tabs.multiline {
+  flex-wrap: wrap;
+  height: auto;
+  min-height: 24px;
+}
+.vtabs.bottom .vtab {
+  margin-top: 0;
+  border-top: none;
+  border-bottom: 1px solid #d9d9d9;
+}
+.editor-sheet {
+  flex: 1;
+  min-height: 0;
+  position: relative;
+  border: 1px solid #d9d9d9;
+  margin-top: -1px;
+  background: #fff;
+}
+.editor-host,
+.editor-mount {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+.editor-host .cm-editor,
+.editor-mount .cm-editor {
+  height: 100%;
+}
+
+/* SynEdit look */
+.cm-editor .cm-gutters {
+  user-select: none;
+}
+.cm-editor .dev-ln-gutter .cm-gutterElement {
+  padding: 0 0 0 4px;
+  text-align: right;
+}
+.dev-ln {
+  position: relative;
+  padding-right: 2px;
+  min-width: 1ch;
+}
+.dev-gutter-mark {
+  position: absolute;
+  width: 11px;
+  height: 14px;
+  left: 50%;
+  top: 50%;
+  margin: -7px 0 0 -6px;
+  background-repeat: no-repeat;
+}
+.dev-fold-gutter {
+  width: 16px;
+}
+.dev-fold-gutter .cm-gutterElement {
+  position: relative;
+  padding: 0 !important;
+}
+.dev-fold {
+  position: absolute;
+  inset: 0;
+}
+.dev-fold-box {
+  position: absolute;
+  left: 3px;
+  top: 50%;
+  margin-top: -5px;
+  width: 9px;
+  height: 9px;
+  border: 1px solid #000;
+  font: 9px/7px Arial, sans-serif;
+  text-align: center;
+  cursor: pointer;
+  z-index: 1;
+  box-sizing: border-box;
+}
+.dev-fold-line {
+  position: absolute;
+  border-color: #000;
+}
+.dev-fold-down {
+  left: 7px;
+  top: calc(50% + 4px);
+  bottom: 0;
+  border-left: 1px solid;
+}
+.dev-fold-vert {
+  left: 7px;
+  top: 0;
+  bottom: 0;
+  border-left: 1px solid;
+}
+.dev-fold-endline {
+  left: 7px;
+  top: 0;
+  height: 50%;
+  width: 6px;
+  border-left: 1px solid;
+  border-bottom: 1px solid;
+}
+.cm-foldPlaceholder {
+  background: transparent;
+  border: 1px solid #808080;
+  color: #808080;
+  margin: 0 2px;
+  padding: 0 2px;
+}
+.cm-editor .cm-cursor {
+  border-left-width: 2px;
+}
+.cm-editor.overwrite .cm-cursor {
+  border-left: none;
+  width: 0.6em;
+  background: currentColor;
+  opacity: 0.6;
+}
+.cm-editor .dev-right-edge {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+.cm-editor .dev-space {
+  background-image: radial-gradient(circle, #888 1px, transparent 1px);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.cm-editor .dev-eol {
+  color: #aaa;
+}
+.cm-editor.ctrl-hover .cm-content {
+  cursor: pointer;
+}
+.cm-editor .cm-scroller::-webkit-scrollbar-corner {
+  background: #f0f0f0;
+}
+
+/* ---------------------------------------------------------------- message control */
+.msgpanel {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  background: #f0f0f0;
+}
+.msgpanel.closed {
+  height: 26px;
+}
+.msg-tabs {
+  flex: none;
+}
+.msg-sheet {
+  flex: 1;
+  position: relative;
+  min-height: 0;
+  border: 1px solid #d9d9d9;
+  margin-top: -1px;
+  background: #fff;
+}
+.msglist {
+  position: absolute !important;
+  inset: 0;
+  border: none !important;
+}
+.logsheet {
+  position: absolute;
+  inset: 0;
+  display: flex;
+}
+.log-info {
+  width: 156px;
+  flex: none;
+  position: relative;
+  background: #fff;
+}
+.abortbtn {
+  position: absolute !important;
+  left: 4px;
+  top: 4px;
+  width: 144px;
+  height: 30px;
+}
+.logoutput {
+  flex: 1;
+  border: 1px solid #828790;
+  margin: 0 0 0 0;
+  font-family: 'Courier New', monospace;
+  font-size: 13px;
+  line-height: 16px;
+  resize: none;
+  outline: none;
+  white-space: pre;
+  overflow: auto;
+  user-select: text;
+}
+
+.statusbar {
+  flex: none;
+  height: 22px;
+  display: flex;
+  align-items: stretch;
+  background: #f0f0f0;
+  border-top: 1px solid #dadada;
+  position: relative;
+}
+.sb-panel {
+  flex: none;
+  padding: 3px 4px 0 3px;
+  white-space: pre;
+  overflow: hidden;
+  border-right: 1px solid #dadada;
+  margin: 2px 0;
+  line-height: 14px;
+}
+.sb-panel.last {
+  flex: 1;
+  border-right: none;
+}
+.sb-grip {
+  width: 14px;
+  background:
+    radial-gradient(circle, #a0a0a0 1px, transparent 1.2px) 0 0 / 4px 4px;
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+  margin: 4px 2px 2px 0;
+}
+
+/* ---------------------------------------------------------------- dialogs specifics */
+.synexample .cm-editor {
+  height: 100%;
+}
+.vcustom {
+  overflow: hidden;
+}
+
+/* ---------------------------------------------------------------- console window */
+.console-win .win-client {
+  background: #0c0c0c;
+}
+.console-client {
+  position: relative;
+  overflow: hidden;
+}
+.console-scroll {
+  position: absolute;
+  inset: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.console-scroll::-webkit-scrollbar {
+  background: #f0f0f0;
+}
+.console-canvas {
+  position: absolute;
+  left: 0;
+  display: block;
+  cursor: default;
+}
+.console-input {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  border: none;
+  padding: 0;
+  resize: none;
+  pointer-events: none;
+}
+
+/* ---------------------------------------------------------------- completion / hints */
+.completion-box {
+  position: fixed;
+  z-index: 150000;
+  background: #fff;
+  border: 1px solid #646464;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+}
+.completion-list {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.completion-item {
+  display: flex;
+  align-items: center;
+  height: 17px;
+  padding: 0 2px;
+  white-space: nowrap;
+  cursor: default;
+}
+.completion-item .ci-type {
+  color: #808080;
+  margin-right: 4px;
+}
+.completion-item .ci-name {
+  font-weight: bold;
+  color: #000;
+}
+.completion-item .ci-args {
+  color: #800000;
+  margin-left: 1px;
+}
+.completion-item.sel {
+  background: #0078d7;
+}
+.completion-item.sel span {
+  color: #fff !important;
+}
+.functip {
+  position: fixed;
+  z-index: 150001;
+  background: #ffffe1;
+  border: 1px solid #767676;
+  padding: 1px 4px;
+  font-size: 12px;
+  white-space: pre;
+  pointer-events: none;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+.functip b {
+  font-weight: bold;
+}
+.hinttip {
+  position: fixed;
+  z-index: 150001;
+  background: #ffffe1;
+  border: 1px solid #767676;
+  padding: 1px 4px;
+  font-size: 12px;
+  white-space: pre;
+  pointer-events: none;
+}
+.compiler-options-list { height: 100%; overflow: auto; background: white; border: 1px solid #888; }
+.compiler-option-row { display: grid; grid-template-columns: minmax(180px, 1fr) 150px; align-items: center; min-height: 24px; border-bottom: 1px solid #ddd; }
+.compiler-option-row > span { padding: 3px 5px; }
+.compiler-option-row select { min-width: 0; font: inherit; height: 23px; background: white; border: 1px solid #aaa; }
+.font-support {
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  top: 66px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 30px;
+}
+.font-support > span {
+  flex: 1;
+  min-width: 0;
+  font-size: 11px;
+  line-height: 15px;
+  overflow-wrap: anywhere;
+}
+.font-support > button {
+  flex: none;
+  min-width: 94px;
+  height: 23px;
+}

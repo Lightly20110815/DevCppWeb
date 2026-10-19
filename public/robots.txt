@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# 编译器工具链约 100 MiB，抓取它没有索引价值，只会消耗抓取预算。
+Disallow: /compiler/
+
+Sitemap: https://devcppweb.vercel.app/sitemap.xml

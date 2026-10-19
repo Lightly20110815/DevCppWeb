@@ -1,0 +1,21 @@
+[
+"...da ne bi smeli onemogočiti te nasvete?<CR><CR>Nasveti predstavljeni tukaj vam bodo dale nedokumentirane informacije, ki niso najdene nikjer drugje<CR>Če jih onemogočite in jih želite kasneje spet omogočiti, lahko to storite v meniju \"Pomoč->Nasvet dneva\"...",
+"...da lahko uporabite spletno posodabljanje, ki vam posodobi Dev-C++ z zadnjimi popravki in novimi zmožnosti?<CR><CR>Izberite \"Orodja->Preveri za posodobitve/pakete...\"",
+"...da vam zmožnost dovršitev kode, s predlaganjem vseh možnih ukazov, pomaga povečat vašo produktivnost?<CR><CR>Da omogočite dovršitev, pojdite v meni \"Orodja->Možnosti urejevalnika\" in omogočite brskalnik po razredih in dovršitev kode.",
+"...da je zmožnost dovršitve kode sprožena, ko v oknu urejevalnika vpišete \".\", \"->\" ali \"::\"?<CR><CR>Da določite časovni zamik prikaza, pojdite v meni \"Orodja->Možnosti urejevalnika->Brskanje po razredih->Dovršitev\".",
+"...da lahko v oknu urejevalnika kadarkoli, s pritiskom \"Ctrl+Space\", sprožite zmožnost dovršitve?<CR><CR>(Poskusite pritisnit \"Ctrl+Shift+Space\", medtem ko je kurzor v oklepajih funkcije - kjer so parametri)",
+"...da s pritiskom shift+klik na vnos v brskalniku, skočite na deklaracijo namesto na uvedbo?",
+"...da lahko v brskalniku po razredih dodate mape po meri in si s tem olajšate iskanje v velikih projektih? Mape lahko tudi gnezdite!<CR><CR>V brskalniku po razredih enostavno kliknite desno tipko in prikazal se bo meni...",
+"...da sta dva načina prikazovanja brskalnika po razredih?<CR>Eden vam pokaže vse razčlenjene razrede/člane/funkcije projekta, drugi pa vam pokaže pomembne informacije *samo* za datoteko, ki se trenutno ureja.<CR><CR>V brskalniku po razredih kliknite desni gumb in izberite \"Način pogleda\"...",
+"...da lahko določite, če boste morali, za odprtje datoteke, klikniti dvakrat ali enkrat?<CR><CR>Da določite to, pojdite v \"Orodja->Možnosti delovnega okolja\" in omogočite (ali onemogočite) \"Dvojni klik v Upravitelju projekta za odpiranje datotek\"...",
+"...da lahko v upravitelju projekta določite mape po meri in tako bolje organizirate vaše datoteke?<CR><CR>To lahko naredite tako, da v upravitelju projekta kliknete na datoteko, kjer se vam bo pokazal meni...",
+"...da, če ste v upravitelju projekta ustvarili mapo po meri, lahko povlečete in spustite datotek in jih tako razvrstite?",
+"...da lahko dobite informacije o datoteki s katero delate?<CR><CR>Izberite \"Datoteka->Lastnosti\" in dobili boste informacije o velikosti datoteke, število vrstic, vrstice komentarjev, prazne vrstice in vključene datoteke!",
+"...da lahko shranite projekt kot predlogo?<CR><CR>Izberite \"Datoteka->Novo->Predloga\". To bo shranilo vaš projekt kot Dev-C++ predlogo in bo na voljo v meniju \"Datoteka->Novo->Projekt\".<CR>Tako boste lahko zaželi kodirat po vašem okusu!",
+"...da lahko v Dev-C++ uvozite vaše MS Visual C++ projekte?<CR><CR>Izberite \"Datoteka->Uvozi->Uvozi MS Visual C++ projekt\".<CR>Lahko, da boste morali malo dodatno nastaviti možnosti projekta, ker še zadeva ni izpopolnjena!",
+"...da lahko posamezno datoteko ali pa celotni izvozite v HTML ali RTF obliko?<CR>Tako lahko izvirno kodo enostavno naložite na spletno stran in jo delite z ostalim svetom!<CR><CR>Enostavno kliknite na \"Datoteka->Izvozi\" in izberite način izvoza...",
+"...da lahko (od-)komentirate več vrstic naenkrat, tako, da jih označite in kliknete na \"Uredi->(Od-)Komentiraj\"?",
+"...da lahko zmanjšate/povečata zamik več vrstic naenkrat, tako, da jih označite in kliknete na \"Uredi->(Povečaj/Zmanjšaj) zamik\"?",
+"...da lahko v urejevalniku uporabite zaznamke, kar vam omogoča hitrejše pomikanje po kodi?<CR><CR>Nastavite ali odstranite zaznamek s klikom na \"Uredi->Preklopi na zaznamke\" in izbiro številke zaznamka.<CR>Pojdite na množico zaznamkov s klikom na \"Uredi->Pojdi v zaznamke\" in izbiro številke zaznamka.",
+"...da, v meniju \"Iskanje\" obstaja močan ukaz \"Pojdi v funkcijo\"?<CR><CR>Ta prikaže vse funkcije datoteke in z vpisom dela funkcije, se seznam funkcij filtrira. Pritisnite enter in takoj se boste pomaknili v to!<CR>Opomba: brskanje po razredih mora biti omogočeno..."
+]

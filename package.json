@@ -1,0 +1,43 @@
+{
+  "name": "devcpp-web",
+  "private": true,
+  "version": "5.11.0",
+  "description": "Dev-C++ 5.11 recreated for the browser, powered by Vite",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "postinstall": "node scripts/copy-compiler.mjs",
+    "dev": "vite",
+    "prebuild": "node scripts/copy-compiler.mjs",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "convert-source": "python3 scripts/convert_source.py",
+    "build-runtime": "node scripts/build-runtime.mjs",
+    "set-site-url": "node scripts/set-site-url.mjs",
+    "og-image": "python3 scripts/make-og-image.py"
+  },
+  "dependencies": {
+    "@bjorn3/browser_wasi_shim": "^0.4.2",
+    "@codemirror/autocomplete": "^6.20.3",
+    "@codemirror/commands": "^6.11.1",
+    "@codemirror/lang-cpp": "^6.0.3",
+    "@codemirror/language": "^6.13.1",
+    "@codemirror/search": "^6.7.2",
+    "@codemirror/state": "^6.7.6",
+    "@codemirror/view": "^6.43.14",
+    "@lezer/highlight": "^1.2.5",
+    "@yowasp/clang": "22.0.0-git20542-10",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "typescript": "~5.9.3",
+    "vite": "^8.3.4"
+  }
+}

@@ -1,0 +1,167 @@
+[
+ {
+  "file": "Bulgarian.lng",
+  "name": "Bulgarian (Български)",
+  "hasTips": false
+ },
+ {
+  "file": "Catalan.lng",
+  "name": "Catalan (Català)",
+  "hasTips": true
+ },
+ {
+  "file": "Chinese.lng",
+  "name": "简体中文/Chinese",
+  "hasTips": true
+ },
+ {
+  "file": "Chinese_TC.lng",
+  "name": "Chinese (TW)",
+  "hasTips": false
+ },
+ {
+  "file": "Croatian.lng",
+  "name": "Croatian",
+  "hasTips": false
+ },
+ {
+  "file": "Czech.lng",
+  "name": "Czech (Čeština)",
+  "hasTips": true
+ },
+ {
+  "file": "Danish.lng",
+  "name": "Danish",
+  "hasTips": true
+ },
+ {
+  "file": "Dutch.lng",
+  "name": "Dutch (Nederlands)",
+  "hasTips": true
+ },
+ {
+  "file": "English.lng",
+  "name": "English (Original)",
+  "hasTips": true
+ },
+ {
+  "file": "Estonian.lng",
+  "name": "Estonian",
+  "hasTips": true
+ },
+ {
+  "file": "French.lng",
+  "name": "French",
+  "hasTips": true
+ },
+ {
+  "file": "Galego.lng",
+  "name": "Galego",
+  "hasTips": true
+ },
+ {
+  "file": "German.lng",
+  "name": "German (Deutsch)",
+  "hasTips": true
+ },
+ {
+  "file": "Greek.lng",
+  "name": "Greek (Ελληνικά)",
+  "hasTips": false
+ },
+ {
+  "file": "Hebrew.lng",
+  "name": "Hebrew",
+  "hasTips": true
+ },
+ {
+  "file": "Hungarian.lng",
+  "name": "Hungarian",
+  "hasTips": true
+ },
+ {
+  "file": "Italian.lng",
+  "name": "Italian",
+  "hasTips": true
+ },
+ {
+  "file": "Japanese.lng",
+  "name": "日本語",
+  "hasTips": true
+ },
+ {
+  "file": "Korean.lng",
+  "name": "Korean (한국어)",
+  "hasTips": true
+ },
+ {
+  "file": "Latvian.lng",
+  "name": "Latvian",
+  "hasTips": true
+ },
+ {
+  "file": "Norwegian.lng",
+  "name": "Norwegian (Norsk bokmål)",
+  "hasTips": true
+ },
+ {
+  "file": "Polish.lng",
+  "name": "Polish (Polski)",
+  "hasTips": true
+ },
+ {
+  "file": "Portuguese.lng",
+  "name": "Portuguese (Brazil)",
+  "hasTips": true
+ },
+ {
+  "file": "Romanian.lng",
+  "name": "Romanian (Română)",
+  "hasTips": true
+ },
+ {
+  "file": "Russian.lng",
+  "name": "Russian (Русский)",
+  "hasTips": true
+ },
+ {
+  "file": "Slovak.lng",
+  "name": "Slovak (Slovenský)",
+  "hasTips": false
+ },
+ {
+  "file": "Slovenian.lng",
+  "name": "Slovenian (slovenščina)",
+  "hasTips": true
+ },
+ {
+  "file": "Spanish.lng",
+  "name": "Spanish (Latino América)",
+  "hasTips": true
+ },
+ {
+  "file": "SpanishCastellano.lng",
+  "name": "Español (Castellano)",
+  "hasTips": true
+ },
+ {
+  "file": "SpanishColombia.lng",
+  "name": "Español (Colombia)",
+  "hasTips": true
+ },
+ {
+  "file": "Swedish.lng",
+  "name": "Svenska",
+  "hasTips": true
+ },
+ {
+  "file": "Turkish.lng",
+  "name": "Turkish",
+  "hasTips": true
+ },
+ {
+  "file": "Ukrainian.lng",
+  "name": "Ukrainian (Українська)",
+  "hasTips": true
+ }
+]

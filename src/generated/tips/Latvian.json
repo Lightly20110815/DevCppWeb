@@ -1,0 +1,22 @@
+[
+"...ka nevajadzētu atslēgt šos padomus?<CR><CR>Šeit esošie padomi dos tev nedokumentētu informāciju, kas nav atrodama nekur citur.<CR>Ja tu tos izslēgsi un vēlāk vēlēsies apskatīt, paņem \"Palīdzība / Dienas padoms\"...",
+"...ka vari izmantot vUpdate, lai apgādātu savu Dev-C++ vidi ar pēdējiem kļūdu labojumiem un jaunākajām iespējām?<CR><CR>Paņem \"Rīki / Meklēt Atjaunojumus/Packages...\"",
+"...ka koda pabeigšanas opcija var paaugstināt produktivitāti, iesakot visas pašreizējajā kontekstā iespējamās komandas?<CR><CR>Lai ieslēgtu koda pabeigšanu, paņem \"Rīki / Redaktora Opcijas\" un ieslēdz klašu pārlūku un koda pabeigšanu.",
+"...ka koda pabeigšanas opcija nostrādā pēc noteiktas aiztures, kad redaktora logā ieraksta \".\", \"->\" vai \"::\"?<CR><CR>Lai piereglētu šo aizturi, palabo \"Rīki / Redaktora Opcijas / Klašu pārlūkošana / Pabeigšana\".",
+"...ka koda pabeigšanu var izsaukt, nospiežot \"Ctrl+Space\", jebkurā brīdī, kad esi redaktora logā?<CR><CR>(Pamēģini nospiest \"Ctrl+Shift+Space\" atrodoties funkcijas argumentu iekavās...)",
+"...ka turot \"shift\" un klikšķinot uz kāda ieraksta klašu pārlūkā, tevi pārceļ uz deklarāciju nevis implementāciju?<CR><CR>Protams, var arī izmantot konteksta izvēlni šim pašam (un daudziem citiem!) mērķiem...",
+"...ka var pievienot savas mapes klašu pārlūkā, lai būtu vienkāršāk orientēties lielos projektos? Var pat šīs mapes ievietot vienu otrā!<CR><CR>Vienkārši noklikšķini labo pogu klašu pārlūkā, lai parādītos konteksta izvēlne...",
+"...ka klašu pārlūka mapju informācija glabājas failā \"classfolders.dcf\" projekta saknes mapē?<CR><CR>Ja kaut kas nojūk, tad vienkārši izdzēs šo failu un vēlreiz atver projektu!",
+"...ka klašu pārlūkā ir divi skata veidi?<CR>Viens rāda visas projektā izbantotās klases/memberus/funkcijas, bet otrs rāda informāciju, kas attiecas *tikai* uz pašreiz labojamo failu.<CR><CR>Vienkārši veic labo klikšķi klašu pārlūkā un izvēlies \"Skata veids\"...",
+"...ka vari noteikt to, vai failu no projekta saraksta atver ar vienkāršo- vai ar dubult-klikšķi?<CR><CR>Lai nodefinētu šo lietu, paņem \"Rīki / Vides Opcijas\" un ieslēdz (vai izslēdz) punktu \"Dubultklikšķis, lai atvērtu Projekta Pārvaldes Failus\"...",
+"...ka var nodefinēt savas mapes (tikai augšējā līmenī) projekta vadības logā, lai labāk organizētu savus failus?<CR><CR>Lai to izdarītu, noklikšķini labo pogu projekta vadības logā, lai parādītos konteksta izvēlne...",
+"...ka, ja ir izveidotas savas mapes projekta vadības logā, tās var mainīt ar vietām vienkārši pārvelkot no vienas vietas uz otru?",
+"...ka var apskatīt informāciju par failu, ar kuru šobrīd strādā?<CR><CR>Paņem \"Fails / Īpašības\" un iegūsi informāciju par faila izmēru, rindu skaitu, komentāru skaitu (rindās), tukšo rindu skaitu, kā arī par include failiem!",
+"...ka vari saglabāt savu projektu kā šablonu?<CR><CR>Paņem \"Fails / Jauns / Šablons\". Tā saglabāsi savu projektu kā Dev-C++ šablonu, un šis šablons būs pieejams, kad izvēlēsies \"Fails / Jauns / Projekts\".<CR>Tādā veidā vari izveidot projektu sagataves, kas atbilst tavai gaumei!",
+"...ka vari importēt savus MS Visual C++ projektus?<CR><CR>Vienkārši izvēlies \"Fails / Importēt / Importēt MS Visual C++ projektu\".<CR>Var gadīties, ka pēc importēšanas nāksies nedaudz pielabot projekta paametrus... Bet galu galā arī tas ir labi :)",
+"...ka vari eksportēt source failu vai visu projektu uz HTML vai RTF?<CR>Šādā veidā tu vari izvietot savu pirmkodu (source ;) ) weblapā un dalīties informācijā ar visu pasauli!<CR><CR>Vienkārši noklikšķni \"Fails / Eksportēt\" un izvēlies eksportēšanas metodi...",
+"...ka vari ATkomentēt līniju kopu, tās aizzīmējot un noklikšķinot \"Labot / ATkomentēt\"?",
+"...ka vari samazināt atkāpi līniju grupai, tās aizzīmējot un noklikšķinot \"Labot / Samazināt Atkāpi\"?",
+"...ka vari lietot iezīmes redaktorā, lai ātri pārvietotos pa kodu?<CR><CR>Ieslēdz vai izslēdz iezīmi, noklikšķinot \"Labot / Pārslēgt Piezīmes\" un paņemot iezīmes numuru.<CR>Lai aizietu uz iezīmi, noklikšķini \"Labot / Iet uz Iezīmēm\" un izvēles iezīmes numuru.",
+"...ka \"Meklēt\" izvēlnē atrodas jaudīgā \"Iet uz funkciju...\" komanda?<CR><CR>Tā parāda visas faila funkcijas un, ierakstot kādu funkcijs vārda daļu, saraksts atfiltrē rezultātus. Nospied \"Enter\" un tu nokļusi uzreiz pie šis funkcijas!<CR>Piezīme: Klašu pārlūkošanai ir jābūt ieslēgtai..."
+]

@@ -1,0 +1,21 @@
+[
+"...není dobré vypínat tipy?<CR><CR>Tipy, nabízené zde přináší informace a triky, které nejsou zmíněné nikde jinde.<CR>Pokud tipy zrušíte, najdete je vždy v nabídce Nápověda / Tip dne.",
+"...můžete použít vUpdate k aktualizaci prostředí Dev-C++. Nepřijdete pak o novinky, opravy chyb ani nové funkce.<CR><CR>Zvolte Nástroje / Zjistit updaty.",
+"...nejnovější verzi tohoto souboru s českým překladem naleznete vždy několik dní po vydání Dev-C++ na stránce Tringi netbase?<CR><CR>Přejít na tuto stránku můžete kliknutím na následující odkaz.<URL>http://tringi.mx-3.cz<UDESC>Tringi netbase (http://tringi.mx-3.cz)",
+"...vlastnost dokončování vám může pomoci zvýšit produktivitu práce tak, že vám nabídne všechna možná řešení dostupná pro aktuální kontext?<CR><CR>Povolit dokončování můžete v nabídce Nástroje / Nastavení editoru na záložce Struktura kódu / Dokončování.",
+"...dokončování kódu se aktivuje po napsání \".\", \"->\" nebo \"::\" po uplynutí nastavitelné doby?<CR><CR>Tuto prodlevu je možné nastavit v nabídce Nástroje / Nastavení editoru na záložce Struktura kódu / Dokončování.",
+"...můžete explicitně vyvolat funkci dokončování stiskem klávesy Ctrl a Mezerník kdekoliv v okně editoru?<CR><CR>Také zkuste stisknout Ctrl-Shift-Mezerník kdykoliv je kurzor uvnitř závorek volání funkce...",
+"...přidržením klávesy Shift při kliknutí do přehledu tříd přesune editaci k deklaraci místo implementace?<CR>Samozřejmě je vše v kontextovém menu na pravém tlačítku myši...",
+"...můžete i v přehledu tříd vytvářet vlastní složky?<CR><CR>K usnadnění orientace ve velkých projektech pak můžete běžným tažením myši rozlišit všechny objekty a proměnné.<CR><CR>Kontextové menu zobrazíte kliknutím pravým tlačítkem myši...",
+"...je možné zvolit si ze dvou režimů zobrazení přehledu tříd? Jeden zobrazuje všechny zjištěné třídy, členské funkce a proměnné v projektu a druhý pouze relevantní informace k danému souboru.<CR><CR>Kliknutím pravým tlačítkem myši zobrazte kontextové menu a zvolte Zobrazit/Aktuální soubor.",
+"...můžete zvolit zda chcete otevírat soubory ze Správce projektu jednoduchým kliknutím nebo dovjklikem?<CR><CR>Nastavit si tuto vlastnost můžete v nabídce Nástroje / Nastavení prostředí a povolte (nebo zrušte) volbu Dvojklik pro otevření souboru.",
+"...si můžete nastavit vlastní složky (pouze v jedné úrovni) k organizaci souborů ve správci projektu?<CR><CR>K usnadnění orientace ve velkých projektech pak můžete běžným tažením myši rozlišit všechny soubory.<CR><CR>Kontextové menu zobrazíte kliknutím pravým tlačítkem myši...",
+"...můžete získat zajímavé informace o souboru se kterým právě pracujete.<CR><CR>Zvolte z menu Soubor položku Vlastnosti...",
+"...je možné uložit projekt jako šablonu?<CR><CR>Zvolte nabídku Soubor / Nový / Šablona. Tímto uložíte váš projekt jako šablonu Dev-C++ a můžete nové projekty začínat na základě této šablony.",
+"...můžete převést vaše projekty MS Visual C++ do Dev-C++?<CR><CR>Zvolte nabídku Soubor / Import / Importovat projekt MS Visual C++.<CR>Je ale nutné projekt upravit aby byl ve finální verzi spustitelný!",
+"...můžete exportovat zdrojové kódy nebo celý projekt do HTML nebo RTF?<CR><CR>Je to nejvhodnější a nejrychlejší způsob jak uploadovat kódy na web.<CR><CR>Jednoduše klikněte v nabídce Soubor na položku Export a zvolte metodu.",
+"...je možné snadno a rychle zakomentovat celý blok kódu volbou Editace/Zakomentovat?<CR><CR>Podobně použijte funkci Odkomentovat.",
+"...je možné snadno a rychle odsadit celý blok kódu volbou Editace/Odsadit?<CR><CR>Podobně použijte funkci k předsazení bloku.",
+"...k usnadnění orientace v editoru můžete použít záložky?<CR><CR>Nastavením záložky na několik, často upravovaných, částí kódu si ušetříte čas ztracený rolováním textu.",
+"...je k dispozici funkce Přejít na funkci v nabídce Hledat?<CR><CR>Zobrazí seznam všech funkcí v souboru a napsáním části názvu můžete potřebnou funkci vyhledat. Klávesou ENTER pak přímo přejdete na tuto funkci<CR><CR>Poznámka: Funkce struktury kódu musí být povolena"
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "file": "Consolas-Regular.ttf",
+    "url": "https://raw.githubusercontent.com/infofintech/bootfont/master/Consola.ttf",
+    "bytes": 358460,
+    "sha256": "423504695a3de1f80c618e3e6ead215a6b891be06c179bf048bb5a80d5d0eda3",
+    "family": "Consolas",
+    "style": "Regular",
+    "version": "Version 5.33",
+    "copyright": "© 2013 Microsoft Corporation. All Rights Reserved."
+  },
+  {
+    "file": "Consolas-Bold.ttf",
+    "url": "https://raw.githubusercontent.com/infofintech/bootfont/master/Consolab.ttf",
+    "bytes": 368720,
+    "sha256": "73acf8f7f9d16c76829ee5ee801852cd54184a68ac513c1e339487685aa9b732",
+    "family": "Consolas",
+    "style": "Bold",
+    "version": "Version 5.33",
+    "copyright": "© 2013 Microsoft Corporation. All Rights Reserved."
+  },
+  {
+    "file": "Consolas-Italic.ttf",
+    "url": "https://raw.githubusercontent.com/infofintech/bootfont/master/Consolai.ttf",
+    "bytes": 365176,
+    "sha256": "219acde6b177d876ac1debfe03c7b951d6333b350044e1ec16bdd3312c63aee0",
+    "family": "Consolas",
+    "style": "Italic",
+    "version": "Version 5.33",
+    "copyright": "© 2013 Microsoft Corporation. All Rights Reserved."
+  },
+  {
+    "file": "Consolas-Bold-Italic.ttf",
+    "url": "https://raw.githubusercontent.com/infofintech/bootfont/master/Consolaz.ttf",
+    "bytes": 110268,
+    "sha256": "23b32c48f969e88e430b65a11311393180e2ab95be9309a5b286f473a7899f39",
+    "family": "Consolas",
+    "style": "Bold Italic",
+    "version": "Version 1.00",
+    "copyright": "© 2005 Microsoft Corporation. All Rights Reserved."
+  }
+]
