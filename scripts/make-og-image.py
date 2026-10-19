@@ -18,7 +18,7 @@ W, H = 1200, 630
 
 # Override with SITE_URL=example.com when the deployment domain changes.
 SITE_URL = (
-    os.environ.get("SITE_URL", "https://devcppweb.vercel.app")
+    os.environ.get("SITE_URL", "https://devc.20110815.xyz")
     .replace("https://", "")
     .replace("http://", "")
     .rstrip("/")

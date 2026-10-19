@@ -1,6 +1,6 @@
 # Dev-C++ Web 5.11
 
-**在线试用：** <https://devcppweb.vercel.app/>
+**在线试用：** <https://devc.20110815.xyz/>
 
 使用 Vite、React 和 CodeMirror 重建 Dev-C++ 5.11 的 Windows 风格桌面界面，把 C++ 的编辑、编译和运行搬进浏览器。语言、窗体布局、图标、配色、模板和帮助内容来自用户提供的 `SOURCE 5.11`。
 

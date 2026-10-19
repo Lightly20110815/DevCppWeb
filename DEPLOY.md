@@ -2,7 +2,7 @@
 
 这份清单按顺序做一遍，站点就能被 Google / Bing / 百度用关键词搜到。技术侧的 SEO 文件（`index.html`、`robots.txt`、`sitemap.xml`、`og-image.png`、JSON-LD）已经写好，剩下的是仓库元数据、部署配置和主动提交收录。
 
-当前假定的站点地址是 `https://devcppweb.vercel.app/`。换成自定义域名后跑一次：
+当前假定的站点地址是 `https://devc.20110815.xyz/`。换成自定义域名后跑一次：
 
 ```sh
 node scripts/set-site-url.mjs https://your-domain.com
@@ -32,7 +32,7 @@ git ls-files public/compiler | wc -l   # 应为 0
 | 位置 | 填什么 |
 | --- | --- |
 | Description | `Dev-C++ 5.11 网页版：浏览器里的 C++ IDE 与在线编译器（Clang/WebAssembly）` |
-| Website | `https://devcppweb.vercel.app/` |
+| Website | `https://devc.20110815.xyz/` |
 | Topics | `dev-cpp` `cpp` `ide` `online-compiler` `webassembly` `wasm` `clang` `react` `vite` `browser-ide` `code-editor` |
 | Social preview | 上传 `public/og-image.png` |
 
@@ -59,7 +59,7 @@ Cross-Origin-Embedder-Policy: require-corp
 部署后验证：
 
 ```sh
-curl -sI https://devcppweb.vercel.app/ | grep -i cross-origin
+curl -sI https://devc.20110815.xyz/ | grep -i cross-origin
 ```
 
 两条都在才算成功。没有的话浏览器控制台会提示 `crossOriginIsolated === false`。
@@ -104,7 +104,7 @@ VITE_COMPILER_BASE=https://cdn.jsdelivr.net/npm/@yowasp/clang@22.0.0-git20542-10
 ### 3.2 Google Search Console
 
 1. 打开 <https://search.google.com/search-console>，添加资源。
-2. `vercel.app` 属于公共后缀，**不能用“网域”资源**，选 **“网址前缀”** 并填 `https://devcppweb.vercel.app/`。
+2. `vercel.app` 属于公共后缀，**不能用“网域”资源**，选 **“网址前缀”** 并填 `https://devc.20110815.xyz/`。
 3. 验证方式选 HTML 标记：把给出的 `<meta name="google-site-verification" ...>` 粘到 `index.html` 的 `<head>` 里，推送后回控制台点验证；或者把验证文件放进 `public/`。
 4. 左侧 **Sitemaps** 提交 `sitemap.xml`。
 5. **网址检查** 输入首页 → **请求编入索引**。首次收录通常 1～7 天。
@@ -133,7 +133,7 @@ git add "public/$KEY.txt" && git commit -m "chore: indexnow key" && git push
 部署完成后提交一次：
 
 ```sh
-curl "https://api.indexnow.org/indexnow?url=https://devcppweb.vercel.app/&key=$KEY"
+curl "https://api.indexnow.org/indexnow?url=https://devc.20110815.xyz/&key=$KEY"
 ```
 
 ### 3.6 外链和曝光
@@ -160,12 +160,12 @@ curl "https://api.indexnow.org/indexnow?url=https://devcppweb.vercel.app/&key=$K
 
 ```sh
 # 首页、robots、sitemap 都能访问
-curl -sI https://devcppweb.vercel.app/
-curl -s https://devcppweb.vercel.app/robots.txt
-curl -s https://devcppweb.vercel.app/sitemap.xml
+curl -sI https://devc.20110815.xyz/
+curl -s https://devc.20110815.xyz/robots.txt
+curl -s https://devc.20110815.xyz/sitemap.xml
 
 # 结构化数据
-open "https://search.google.com/test/rich-results?url=https://devcppweb.vercel.app/"
+open "https://search.google.com/test/rich-results?url=https://devc.20110815.xyz/"
 
 # 收录情况（部署后 3～7 天再看）
 # Google: site:devcppweb.vercel.app

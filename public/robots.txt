@@ -4,4 +4,4 @@ Allow: /
 # 编译器工具链约 100 MiB，抓取它没有索引价值，只会消耗抓取预算。
 Disallow: /compiler/
 
-Sitemap: https://devcppweb.vercel.app/sitemap.xml
+Sitemap: https://devc.20110815.xyz/sitemap.xml
