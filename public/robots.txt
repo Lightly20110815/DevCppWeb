@@ -5,3 +5,5 @@ Allow: /
 Disallow: /compiler/
 
 Sitemap: https://devc.20110815.xyz/sitemap.xml
+
+Sitemap: https://devc.20110815.xyz/sitemap.txt
